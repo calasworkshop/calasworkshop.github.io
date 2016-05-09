@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/",
-            "text": "Velkommen til Numbas Workshop\n\n\nEn steg-for-steg introduksjon til \u00e5 lage oppgaver for Computer Aided Assessments\n\n\nOversikt\n\n\nDette kurset vil introdusere Numbas til nye brukere. Det gir en introduksjon til\n\n\n\n\nNumbas Editor Server\n\n\nProsjekter i Numbas\n\n\nOpgavetyper i Numbas\n\n\nEnkel LaTeX\n\n\nRandomiserte verdier i sp\u00f8rsm\u00e5l\n\n\n\n\n\u00d8vinger\n\n\nKurset vil ta deg med i praktiske \u00f8vinger igjennom f\u00f8lgende emner i Numbas:\n\n\n\u00d8ving 1\n - Om editor, prosjektorganisering, metadata\n\n\n\u00d8ving 2\n - Enkel oppgave med konstante tal\n\n\n\u00d8ving 3\n - Oppgave med variabler\n\n\n\u00d8ving 4\n - Oppgave med Tips og Svarforslag\n\n\n\u00d8ving 5\n - Sette sammen oppgaver til en eksamen\n\n\n\u00d8ving 6\n - Laste opp oppgaver og eksamen til LMS\n\n\n\n\nAlle \u00f8vinger utf\u00f8res i \nNumbas Editor\n.\n\nLag din egen konto der, logg deg inn og la Numbas Editor v\u00e6re \u00e5pen i et eget vindu i nettleseren mens du arbeider med kurset. Bruk ogs\u00e5 \nNumbas egen dokumentasjon\n til \u00e5 finne ut av detaljer som ikke blir gjennomg\u00e5tt.",
+            "text": "Velkommen til Numbas Workshop\n\n\nEn steg-for-steg introduksjon til \u00e5 lage oppgaver for Computer Aided Assessments\n\n\nOversikt\n\n\nDette kurset vil introdusere Numbas til nye brukere. Det gir en introduksjon til\n\n\n\n\nNumbas Editor Server\n\n\nProsjekter i Numbas\n\n\nOpgavetyper i Numbas\n\n\nEnkel LaTeX\n\n\nRandomiserte verdier i sp\u00f8rsm\u00e5l\n\n\n\n\n\u00d8vinger\n\n\nKurset vil ta deg med i praktiske \u00f8vinger igjennom f\u00f8lgende emner i Numbas:\n\n\n\u00d8ving 1\n - Om editor, prosjektorganisering, metadata\n\n\n\u00d8ving 2\n - Enkel oppgave med konstante tall\n\n\n\u00d8ving 3\n - Oppgave med variabler\n\n\n\u00d8ving 4\n - Oppgave med Tips og Svarforslag\n\n\n\u00d8ving 5\n - Sette sammen oppgaver til en eksamen\n\n\n\u00d8ving 6\n - Laste opp oppgaver og eksamen til LMS\n\n\n\u00a0\n\n\n\n\n\n\n\n\nAlle \u00f8vinger utf\u00f8res i \nNumbas Editor\n.\n\nLag din egen konto der, logg deg inn og la Numbas Editor v\u00e6re \u00e5pen i et eget vindu i nettleseren mens du arbeider med kurset. Bruk ogs\u00e5 \nNumbas egen dokumentasjon\n til \u00e5 finne ut av detaljer som ikke blir gjennomg\u00e5tt.",
             "title": "Home"
         },
         {
@@ -17,41 +17,66 @@
         },
         {
             "location": "/#vinger",
-            "text": "Kurset vil ta deg med i praktiske \u00f8vinger igjennom f\u00f8lgende emner i Numbas:  \u00d8ving 1  - Om editor, prosjektorganisering, metadata  \u00d8ving 2  - Enkel oppgave med konstante tal  \u00d8ving 3  - Oppgave med variabler  \u00d8ving 4  - Oppgave med Tips og Svarforslag  \u00d8ving 5  - Sette sammen oppgaver til en eksamen  \u00d8ving 6  - Laste opp oppgaver og eksamen til LMS   Alle \u00f8vinger utf\u00f8res i  Numbas Editor . \nLag din egen konto der, logg deg inn og la Numbas Editor v\u00e6re \u00e5pen i et eget vindu i nettleseren mens du arbeider med kurset. Bruk ogs\u00e5  Numbas egen dokumentasjon  til \u00e5 finne ut av detaljer som ikke blir gjennomg\u00e5tt.",
+            "text": "Kurset vil ta deg med i praktiske \u00f8vinger igjennom f\u00f8lgende emner i Numbas:  \u00d8ving 1  - Om editor, prosjektorganisering, metadata  \u00d8ving 2  - Enkel oppgave med konstante tall  \u00d8ving 3  - Oppgave med variabler  \u00d8ving 4  - Oppgave med Tips og Svarforslag  \u00d8ving 5  - Sette sammen oppgaver til en eksamen  \u00d8ving 6  - Laste opp oppgaver og eksamen til LMS  \u00a0    Alle \u00f8vinger utf\u00f8res i  Numbas Editor . \nLag din egen konto der, logg deg inn og la Numbas Editor v\u00e6re \u00e5pen i et eget vindu i nettleseren mens du arbeider med kurset. Bruk ogs\u00e5  Numbas egen dokumentasjon  til \u00e5 finne ut av detaljer som ikke blir gjennomg\u00e5tt.",
             "title": "\u00d8vinger"
         },
         {
-            "location": "/tasks/",
-            "text": "\u00d8ving 1 - Editor\n\n\n(Om editor, prosjektorganisering, metadata)\n\n\nOppgavetekst kommer\n\n\n\u00d8ving 2 - Enkel oppgave\n\n\n(Enkel oppgave med konstante tal)\n\n\nOppgavetekst kommer\n\n\n\u00d8ving 3 - Oppgave med variabler\n\n\n(Oppgave med variabler)\n\n\nOppgavetekst kommer\n\n\n\u00d8ving 4 - Tips og svarforslag\n\n\n(Oppgave med Tips og Svarforslag)\n\n\nOppgavetekst kommer\n\n\n\u00d8ving 5 - Lage eksamen\n\n\n(Sette sammen oppgaver til en eksamen)\n\n\nOppgavetekst kommer\n\n\n\u00d8ving 6 - Eksamen til LMS\n\n\n(Laste opp eksamen til LMS)\n\n\nOppgavetekst kommer",
-            "title": "\u00d8vinger"
+            "location": "/tasks/task1/",
+            "text": "\u00d8ving 1 - Editor\n\n\n(Om editor, prosjektorganisering, metadata)\n\n\nOppgavetekst kommer",
+            "title": "\u00d8ving 1"
         },
         {
-            "location": "/tasks/#ving-1-editor",
+            "location": "/tasks/task1/#ving-1-editor",
             "text": "(Om editor, prosjektorganisering, metadata)  Oppgavetekst kommer",
             "title": "\u00d8ving 1 - Editor"
         },
         {
-            "location": "/tasks/#ving-2-enkel-oppgave",
+            "location": "/tasks/task2/",
+            "text": "\u00d8ving 2 - Enkel oppgave\n\n\n(Enkel oppgave med konstante tal)\n\n\nOppgavetekst kommer",
+            "title": "\u00d8ving 2"
+        },
+        {
+            "location": "/tasks/task2/#ving-2-enkel-oppgave",
             "text": "(Enkel oppgave med konstante tal)  Oppgavetekst kommer",
             "title": "\u00d8ving 2 - Enkel oppgave"
         },
         {
-            "location": "/tasks/#ving-3-oppgave-med-variabler",
+            "location": "/tasks/task3/",
+            "text": "\u00d8ving 3 - Oppgave med variabler\n\n\n(Oppgave med variabler)\n\n\nOppgavetekst kommer",
+            "title": "\u00d8ving 3"
+        },
+        {
+            "location": "/tasks/task3/#ving-3-oppgave-med-variabler",
             "text": "(Oppgave med variabler)  Oppgavetekst kommer",
             "title": "\u00d8ving 3 - Oppgave med variabler"
         },
         {
-            "location": "/tasks/#ving-4-tips-og-svarforslag",
+            "location": "/tasks/task4/",
+            "text": "\u00d8ving 4 - Tips og svarforslag\n\n\n(Oppgave med Tips og Svarforslag)\n\n\nOppgavetekst kommer",
+            "title": "\u00d8ving 4"
+        },
+        {
+            "location": "/tasks/task4/#ving-4-tips-og-svarforslag",
             "text": "(Oppgave med Tips og Svarforslag)  Oppgavetekst kommer",
             "title": "\u00d8ving 4 - Tips og svarforslag"
         },
         {
-            "location": "/tasks/#ving-5-lage-eksamen",
+            "location": "/tasks/task5/",
+            "text": "\u00d8ving 5 - Lage eksamen\n\n\n(Sette sammen oppgaver til en eksamen)\n\n\nOppgavetekst kommer",
+            "title": "\u00d8ving 5"
+        },
+        {
+            "location": "/tasks/task5/#ving-5-lage-eksamen",
             "text": "(Sette sammen oppgaver til en eksamen)  Oppgavetekst kommer",
             "title": "\u00d8ving 5 - Lage eksamen"
         },
         {
-            "location": "/tasks/#ving-6-eksamen-til-lms",
+            "location": "/tasks/task6/",
+            "text": "\u00d8ving 6 - Eksamen til LMS\n\n\n(Laste opp eksamen til LMS)\n\n\nOppgavetekst kommer",
+            "title": "\u00d8ving 6"
+        },
+        {
+            "location": "/tasks/task6/#ving-6-eksamen-til-lms",
             "text": "(Laste opp eksamen til LMS)  Oppgavetekst kommer",
             "title": "\u00d8ving 6 - Eksamen til LMS"
         },
