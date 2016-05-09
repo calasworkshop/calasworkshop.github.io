@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+
+	<title>LaTeX - calasWorkshop</title>
+
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../extra.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../..">calasWorkshop</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../..">Home</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../../tasks/">Øvinger</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Notater <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li class="active">
+    <a href="./">LaTeX</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../numbasquestions/">Numbas oppgavetyper</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../variabler/">Variabler</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../latexvariabler/">Variabler i LaTeX</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                <li><a target="_blank" href="https://numbas.mathcentre.ac.uk/">Numbas Editor</a></li>
+                <li><a target="_blank" href="http://numbas-editor.readthedocs.io/en/latest/index.html">Numbas Documentation</a></li>                
+                </ul>
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                
+                    <li >
+                        <a rel="next" href="../../tasks/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../numbasquestions/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#latex">LaTeX</a></li>
+        
+            <li><a href="#latex-i-numbas">LaTeX i Numbas</a></li>
+        
+            <li><a href="#oppgaver">Oppgaver</a></li>
+        
+    
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="latex">LaTeX</h1>
+<p><a href="https://no.wikipedia.org/wiki/LaTeX">LaTeX</a> er et programsystem for typesetting av dokumenter. I Numbas brukes det til å lage pene matematiske uttrykk.
+LaTeX formler redigeres i klartekst mellom avgrensere <code>$...$</code> eller <code>$$...$$</code> og blir gjenkjent automatisk som LaTeX kommandoer, den første som <em>inline</em> uttrykk, den andre som <em>displaystyle</em> uttrykk.</p>
+<p><code>$ x^2 - y^2 $</code> blir vist som $x^2-y^2$ i en tekstlinje.</p>
+<p><code>$$ x^2 - y^2 $$</code> blir vist på egen linje som $$x^2 - y^2$$</p>
+<p>MathJax er et javascript som sørger for at LaTeX kommandoer blir vist som pene matematiske formler i nettleseren. Ved å høyreklikke på en formel og velge Show Math As &gt; Tex Commands vil du se hvordan uttrykket er satt opp.</p>
+<p>Her er noen av mulighetene til å typesette matematikk:</p>
+<table>
+<thead>
+<tr>
+<th>Uttrykk</th>
+<th>LaTeX</th>
+<th>Visning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Greske bokstaver</td>
+<td><code>\alpha , \beta , \pi</code><br><code>\delta, \Delta, \omega, \Omega</code></td>
+<td>$\alpha , \beta , \pi$<br>$\delta, \Delta, \omega, \Omega$</td>
+</tr>
+<tr>
+<td>Funksjoner</td>
+<td><code>\sin x , \log 7 , \arctan 1</code></td>
+<td>$ \sin x , \log 7 , \arctan 1$</td>
+</tr>
+<tr>
+<td>Sub- og superskript</td>
+<td><code>a_n ,  \log_2 8</code><br> <code>10^2 , x^3 , \sin^2 \phi</code></td>
+<td>$a_n ,  \log_2 8$ <br>$10^2 , x^3 , \sin^2 \phi$</td>
+</tr>
+<tr>
+<td>Grupper</td>
+<td><code>10^-3 , 10^{-3} , a_n+1 , a_{n+1}</code></td>
+<td>$ 10^-3 , 10^{-3} , a_n+1 , a_{n+1}$</td>
+</tr>
+<tr>
+<td>Brøker</td>
+<td><code>\frac {\pi} {6}</code><br><code>\frac {x+2} {(x-3)(x+4)}</code></td>
+<td>$\frac {\pi} {6}$<br>$\frac{x+2}{(x-3)(x+4)}$</td>
+</tr>
+<tr>
+<td>Parenteser</td>
+<td><code>(\frac {x-1} {y^3})^2</code><br><code>\left(\frac {x-1} {y^3}\right)^2</code></td>
+<td>$(\frac {x-1} {y^3})^2$<br>$\left(\frac {x-1} {y^3}\right)^2$</td>
+</tr>
+<tr>
+<td>Rottegn</td>
+<td><code>\sqrt {B^2 - 4 AC}</code><br><code>\sqrt[3]{-8}</code></td>
+<td>$\sqrt {B^2 - 4 AC}$<br>$\sqrt[3]{-8}$</td>
+</tr>
+<tr>
+<td>Integraler</td>
+<td><code>\int x^2 dx = \frac 1 3 x^3 + C</code><br> <code>\int_0^{\pi} \sin x \, dx = 2</code></td>
+<td>$\int x^2 dx = \frac 1 3 x^3 + C$ <br>$\int_0^{\pi} \sin x \, dx = 2$</td>
+</tr>
+<tr>
+<td>Summetegn</td>
+<td><code>\sum_{i=1}^{n} i = \frac {n(n+1)}{2}</code></td>
+<td>$\displaystyle{\sum_{i=1}^{n} i = \frac {n(n+1)}{2}}$</td>
+</tr>
+<tr>
+<td>Grenseverdi</td>
+<td><code>\lim_{x \to 0} \frac {\sin x} {x}</code><br><code>\displaystyle{\lim_{x \to 0} \frac {\sin x} {x}}</code></td>
+<td>$\lim_{x \to 0} \frac {\sin x} {x}$<br>$\displaystyle{\lim_{x \to 0} \frac {\sin x} {x}}$</td>
+</tr>
+<tr>
+<td>Matriser</td>
+<td>---</td>
+<td>---</td>
+</tr>
+<tr>
+<td>Definisjon</td>
+<td><code>|x| = \begin{cases} -x,  &amp; x &lt; 0 \\\ x, &amp; x \ge 0 \end{cases}</code></td>
+<td>$\lvert x\rvert =\begin{cases}-x,  &amp; x &lt; 0 \\x, &amp; x \ge 0\end{cases}$</td>
+</tr>
+<tr>
+<td>Avstand</td>
+<td><code>a \; b</code><br><code>a \: b</code><br><code>a \quad b</code> <br><code>a \qquad b</code></td>
+<td>$a\,b$<br>$a\;b$<br>$a\quad b$<br>$a\qquad b$</td>
+</tr>
+<tr>
+<td>Noen tegn</td>
+<td>---</td>
+<td>---</td>
+</tr>
+<tr>
+<td>Tekst</td>
+<td><code>\text{Svaret er: } \pi</code></td>
+<td>$\text{Svaret er: } \pi$</td>
+</tr>
+</tbody>
+</table>
+<!--
+<ol>
+
+<li><p>For <strong>Greek letters</strong>, use <code>\alpha</code>, <code>\beta</code>, …, <code>\omega</code>: $\alpha, \beta, … \omega$.  For uppercase, use <code>\Gamma</code>, <code>\Delta</code>, …, <code>\Omega</code>: $\Gamma, \Delta, …, \Omega$.</p></li>
+<li><p>For <strong>superscripts and subscripts</strong>, use <code>^</code> and <code>_</code>.  For example, <code>x_i^2</code>: $x_i^2$, <code>\log_2 x</code>: $\log_2 x$.</p></li>
+<li><p><strong>Groups</strong>. Superscripts, subscripts, and other operations apply only to the next “group”. A “group” is either a single symbol, or any formula surrounded by curly braces <code>{</code>…<code>}</code>.  If you do <code>10^10</code>, you will get a surprise: $10^10$. But <code>10^{10}</code> gives what you probably wanted: $10^{10}$. Use curly braces to delimit a formula to which a superscript or subscript applies: <code>x^5^6</code> is an error;  <code>{x^y}^z</code> is ${x^y}^z$, and <code>x^{y^z}</code> is $x^{y^z}$. Observe the difference between <code>x_i^2</code> $x_i^2$ and <code>x_{i^2}</code> $x_{i^2}$.</p></li>
+<li><p><strong>Parentheses</strong> Ordinary symbols <code>()[]</code> make parentheses and brackets $(2+3)[4+4]$. Use <code>\{</code> and <code>\}</code> for curly braces $\{\}$.</p>
+
+<p>These do <em>not</em> scale with the formula in between, so if you write <code>(\frac{\sqrt x}{y^3})</code> the parentheses will be too small: $(\frac{\sqrt x}{y^3})$.    Using <code>\left(</code>…<code>\right)</code> will make the sizes adjust automatically to the formula they enclose: <code>\left(\frac{\sqrt x}{y^3}\right)</code> is $\left(\frac{\sqrt x}{y^3}\right)$.</p>
+
+<p><code>\left</code> and<code>\right</code> apply to all the following sorts of parentheses: <code>(</code> and <code>)</code> $(x)$, <code>[</code> and <code>]</code> $[x]$, <code>\{</code> and <code>\}</code> $\{ x \}$, <code>|</code> $|x|$, <code>\vert</code> $\vert x \vert$, <code>\Vert</code> $\Vert x \Vert$, <code>\langle</code> and <code>\rangle</code> $\langle x \rangle$,  <code>\lceil</code> and <code>\rceil</code> $\lceil x \rceil$, and <code>\lfloor</code> and <code>\rfloor</code> $\lfloor x \rfloor$. There are also invisible parentheses, denoted by <code>.</code>: <code>\left.\frac12\right\rbrace</code> is $\left.\frac12\right\rbrace$.</p></li>
+<li><p><strong>Sums and integrals</strong> <code>\sum</code> and <code>\int</code>; the subscript is the lower limit and the superscript is the upper limit, so for example <code>\sum_1^n</code> $\sum_1^n$. Don't forget <code>{</code>…<code>}</code> if the limits are more than a single symbol.  For example, <code>\sum_{i=0}^\infty i^2</code> is $\sum_{i=0}^\infty i^2$. Similarly, <code>\prod</code> $\prod$, <code>\int</code> $\int$, <code>\bigcup</code> $\bigcup$, <code>\bigcap</code> $\bigcap$, <code>\iint</code> $\iint$.</p></li>
+<li><p><strong>Fractions</strong> There are two ways to make these. <code>\frac ab</code> applies to the next two groups, and produces $\frac ab$; for more complicated numerators and denominators use <code>{</code>…<code>}</code>: <code>\frac{a+1}{b+1}</code> is $\frac{a+1}{b+1}$. If the numerator and denominator are complicated, you may prefer <code>\over</code>, which splits up the group that it is in: <code>{a+1\over b+1}</code> is ${a+1\over b+1}$.</p></li>
+<li><p><strong>Fonts</strong> </p>
+
+<ul>
+<li>Use <code>\mathbb</code> or <code>\Bbb</code> for "blackboard bold": $\mathbb{CHNQRZ}$.</li>
+<li>Use <code>\mathbf</code> for boldface: $\mathbf{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$  $\mathbf{abcdefghijklmnopqrstuvwxyz}$.</li>
+<li>Use <code>\mathtt</code> for "typewriter" font: $\mathtt{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$ $\mathtt{abcdefghijklmnopqrstuvwxyz}$.</li>
+<li>Use <code>\mathrm</code> for roman font: $\mathrm{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$  $\mathrm{abcdefghijklmnopqrstuvwxyz}$.</li>
+<li>Use <code>\mathsf</code> for sans-serif font: $\mathsf{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$  $\mathsf{abcdefghijklmnopqrstuvwxyz}$.</li>
+<li>Use <code>\mathcal</code> for "calligraphic" letters: $\mathcal{ ABCDEFGHIJKLMNOPQRSTUVWXYZ}$ </li>
+<li>Use <code>\mathscr</code> for script letters: $\mathscr{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$</li>
+<li>Use <code>\mathfrak</code> for "Fraktur" (old German style) letters: $\mathfrak{ABCDEFGHIJKLMNOPQRSTUVWXYZ} \mathfrak{abcdefghijklmnopqrstuvwxyz}$.</li>
+</ul></li>
+<li><p><strong>Radical signs</strong> Use <code>sqrt</code>, which adjusts to the size of its argument: <code>\sqrt{x^3}</code> $\sqrt{x^3}$; <code>\sqrt[3]{\frac xy}</code> $\sqrt[3]{\frac xy}$. For complicated expressions, consider using <code>{...}^{1/2}</code> instead.</p></li>
+<li><p>Some <strong>special functions</strong> such as "lim", "sin", "max", "ln", and so on are normally set in roman font instead of italic font. Use <code>\lim</code>, <code>\sin</code>, etc. to make these: <code>\sin x</code> $\sin x$, not <code>sin x</code> $sin x$. Use subscripts to attach a notation to <code>\lim</code>: <code>\lim_{x\to 0}</code> $$\lim_{x\to 0}$$</p></li>
+<li><p>There are a very large number of <strong>special symbols and notations</strong>, too many to list here; see <a href="http://pic.plover.com/MISC/symbols.pdf" rel="nofollow">this shorter listing</a>, or <a href="http://mirror.math.ku.edu/tex-archive/info/symbols/comprehensive/symbols-a4.pdf" rel="nofollow">this exhaustive listing</a>. Some of the most common include: </p>
+
+<ul>
+<li><code>\lt \gt \le \ge \neq</code> $\lt\, \gt\, \le\, \ge\, \neq$.  You can use <code>\not</code> to put a slash through almost anything: <code>\not\lt</code> $\not\lt$ but it often looks bad.</li>
+<li><code>\times \div \pm \mp</code> $\times\, \div\, \pm\, \mp$. <code>\cdot</code> is a centered dot: $x\cdot y$</li>
+<li><code>\cup \cap \setminus \subset \subseteq \subsetneq \supset \in \notin \emptyset \varnothing</code> $\cup\, \cap\, \setminus\, \subset\, \subseteq \,\subsetneq \,\supset\, \in\, \notin\, \emptyset\, \varnothing$ </li>
+<li><code>{n+1 \choose 2k}</code> or <code>\binom{n+1}{2k}</code> ${n+1 \choose 2k}$ </li>
+<li><code>\to \rightarrow \leftarrow \Rightarrow \Leftarrow \mapsto</code> $\to\, \rightarrow\, \leftarrow\, \Rightarrow\, \Leftarrow\, \mapsto$</li>
+<li><code>\land \lor \lnot \forall \exists \top \bot \vdash \vDash</code> $\land\, \lor\, \lnot\, \forall\, \exists\, \top\, \bot\, \vdash\, \vDash$</li>
+<li><code>\star \ast \oplus \circ \bullet</code> $\star\, \ast\, \oplus\, \circ\, \bullet$ </li>
+<li><code>\approx \sim \simeq \cong \equiv \prec</code> $\approx\, \sim \, \simeq\, \cong\, \equiv\, \prec$. </li>
+<li><code>\infty \aleph_0</code> $\infty\, \aleph_0$ <code>\nabla \partial</code> $\nabla\, \partial$ <code>\Im \Re</code> $\Im\, \Re$</li>
+<li>For modular equivalence, use <code>\pmod</code> like this: <code>a\equiv b\pmod n</code> $a\equiv b\pmod n$.</li>
+<li><code>\ldots</code> is the dots in $a_1, a_2, \ldots ,a_n$ <code>\cdots</code> is the dots in  $a_1+a_2+\cdots+a_n$</li>
+<li>Some Greek letters have variant forms:
+<code>\epsilon \varepsilon</code> $\epsilon\, \varepsilon$, <code>\phi \varphi</code> $\phi\, \varphi$, and others. Script lowercase l is <code>\ell</code> $\ell$.</li>
+</ul>
+
+<p><a href="http://detexify.kirelabs.org/classify.html" rel="nofollow">Detexify</a> lets you draw a symbol on a web page and then lists the $\TeX$ symbols that seem to resemble it.  These are not guaranteed to work in MathJax but are a good place to start.  To check that a command is supported, note that MathJax.org maintains a <a href="http://docs.mathjax.org/en/latest/tex.html#supported-latex-commands" rel="nofollow">list of currently supported $\LaTeX$ commands</a>, and one can also check Dr. Carol JVF Burns's page of <a href="http://www.onemathematicalcat.org/MathJaxDocumentation/TeXSyntax.htm" rel="nofollow">$\TeX$ Commands Available in MathJax</a>.</p></li>
+<li><p><strong>Spaces</strong> MathJax usually decides for itself how to space formulas, using a complex set of rules. Putting extra literal spaces into formulas  will not change the amount of space MathJax puts in: <code>a␣b</code> and <code>a␣␣␣␣b</code> are  both $a    b$. To add more space, use <code>\,</code> for a thin space $a\,b$; <code>\;</code> for a wider space $a\;b$.  <code>\quad</code> and <code>\qquad</code> are large spaces: $a\quad b$, $a\qquad b$.</p>
+
+<p>To set plain text, use <code>\text{…}</code>: $\{x\in s\mid x\text{ is extra large}\}$. You can nest <code>$…$</code> inside of <code>\text{…}</code>.</p></li>
+<li><p><strong>Accents and diacritical marks</strong> Use <code>\hat</code> for a single symbol $\hat x$, <code>\widehat</code> for a larger formula $\widehat{xy}$. If you make it too wide, it will look silly. Similarly, there are <code>\bar</code> $\bar x$ and <code>\overline</code> $\overline{xyz}$, and <code>\vec</code> $\vec x$ and <code>\overrightarrow</code> $\overrightarrow{xy}$ and <code>\overleftrightarrow</code> $\overleftrightarrow{xy}$. For dots, as in $\frac d{dx}x\dot x =  \dot x^2 +  x\ddot x$,  use <code>\dot</code> and <code>\ddot</code>.</p></li>
+<li><p>Special characters used for MathJax interpreting can be escaped using the <code>\</code> character: <code>\$</code> $\$$, <code>\{</code> $\{$, <code>\_</code> $\_$, etc. If you want <code>\</code> itself, you should use <code>\backslash</code> $\backslash$, because <code>\\</code> is for a new line. </p></li>
+</ol>
+-->
+
+<h2 id="latex-i-numbas">LaTeX i Numbas</h2>
+<ul>
+<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
+<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
+<li><code>mkdocs build</code> - Build the documentation site.</li>
+<li><code>mkdocs help</code> - Print this help message.</li>
+</ul>
+<h2 id="oppgaver">Oppgaver</h2>
+<p>asdf asdf</p></div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+        <script src="../../js/mathjaxhelper.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

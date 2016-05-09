@@ -1,0 +1,109 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "Velkommen til Numbas Workshop\n\n\nEn steg-for-steg introduksjon til \u00e5 lage oppgaver for Computer Aided Assessments\n\n\nOversikt\n\n\nDette kurset vil introdusere Numbas til nye brukere. Det gir en introduksjon til\n\n\n\n\nNumbas Editor Server\n\n\nProsjekter i Numbas\n\n\nOpgavetyper i Numbas\n\n\nEnkel LaTeX\n\n\nRandomiserte verdier i sp\u00f8rsm\u00e5l\n\n\n\n\n\u00d8vinger\n\n\nKurset vil ta deg med i praktiske \u00f8vinger igjennom f\u00f8lgende emner i Numbas:\n\n\n\u00d8ving 1\n - Om editor, prosjektorganisering, metadata\n\n\n\u00d8ving 2\n - Enkel oppgave med konstante tal\n\n\n\u00d8ving 3\n - Oppgave med variabler\n\n\n\u00d8ving 4\n - Oppgave med Tips og Svarforslag\n\n\n\u00d8ving 5\n - Sette sammen oppgaver til en eksamen\n\n\n\u00d8ving 6\n - Laste opp oppgaver og eksamen til LMS\n\n\n\n\nAlle \u00f8vinger utf\u00f8res i \nNumbas Editor\n.\n\nLag din egen konto der, logg deg inn og la Numbas Editor v\u00e6re \u00e5pen i et eget vindu i nettleseren mens du arbeider med kurset. Bruk ogs\u00e5 \nNumbas egen dokumentasjon\n til \u00e5 finne ut av detaljer som ikke blir gjennomg\u00e5tt.",
+            "title": "Home"
+        },
+        {
+            "location": "/#velkommen-til-numbas-workshop",
+            "text": "En steg-for-steg introduksjon til \u00e5 lage oppgaver for Computer Aided Assessments",
+            "title": "Velkommen til Numbas Workshop"
+        },
+        {
+            "location": "/#oversikt",
+            "text": "Dette kurset vil introdusere Numbas til nye brukere. Det gir en introduksjon til   Numbas Editor Server  Prosjekter i Numbas  Opgavetyper i Numbas  Enkel LaTeX  Randomiserte verdier i sp\u00f8rsm\u00e5l",
+            "title": "Oversikt"
+        },
+        {
+            "location": "/#vinger",
+            "text": "Kurset vil ta deg med i praktiske \u00f8vinger igjennom f\u00f8lgende emner i Numbas:  \u00d8ving 1  - Om editor, prosjektorganisering, metadata  \u00d8ving 2  - Enkel oppgave med konstante tal  \u00d8ving 3  - Oppgave med variabler  \u00d8ving 4  - Oppgave med Tips og Svarforslag  \u00d8ving 5  - Sette sammen oppgaver til en eksamen  \u00d8ving 6  - Laste opp oppgaver og eksamen til LMS   Alle \u00f8vinger utf\u00f8res i  Numbas Editor . \nLag din egen konto der, logg deg inn og la Numbas Editor v\u00e6re \u00e5pen i et eget vindu i nettleseren mens du arbeider med kurset. Bruk ogs\u00e5  Numbas egen dokumentasjon  til \u00e5 finne ut av detaljer som ikke blir gjennomg\u00e5tt.",
+            "title": "\u00d8vinger"
+        },
+        {
+            "location": "/tasks/",
+            "text": "\u00d8ving 1 - Editor\n\n\n(Om editor, prosjektorganisering, metadata)\n\n\nOppgavetekst kommer\n\n\n\u00d8ving 2 - Enkel oppgave\n\n\n(Enkel oppgave med konstante tal)\n\n\nOppgavetekst kommer\n\n\n\u00d8ving 3 - Oppgave med variabler\n\n\n(Oppgave med variabler)\n\n\nOppgavetekst kommer\n\n\n\u00d8ving 4 - Tips og svarforslag\n\n\n(Oppgave med Tips og Svarforslag)\n\n\nOppgavetekst kommer\n\n\n\u00d8ving 5 - Lage eksamen\n\n\n(Sette sammen oppgaver til en eksamen)\n\n\nOppgavetekst kommer\n\n\n\u00d8ving 6 - Eksamen til LMS\n\n\n(Laste opp eksamen til LMS)\n\n\nOppgavetekst kommer",
+            "title": "\u00d8vinger"
+        },
+        {
+            "location": "/tasks/#ving-1-editor",
+            "text": "(Om editor, prosjektorganisering, metadata)  Oppgavetekst kommer",
+            "title": "\u00d8ving 1 - Editor"
+        },
+        {
+            "location": "/tasks/#ving-2-enkel-oppgave",
+            "text": "(Enkel oppgave med konstante tal)  Oppgavetekst kommer",
+            "title": "\u00d8ving 2 - Enkel oppgave"
+        },
+        {
+            "location": "/tasks/#ving-3-oppgave-med-variabler",
+            "text": "(Oppgave med variabler)  Oppgavetekst kommer",
+            "title": "\u00d8ving 3 - Oppgave med variabler"
+        },
+        {
+            "location": "/tasks/#ving-4-tips-og-svarforslag",
+            "text": "(Oppgave med Tips og Svarforslag)  Oppgavetekst kommer",
+            "title": "\u00d8ving 4 - Tips og svarforslag"
+        },
+        {
+            "location": "/tasks/#ving-5-lage-eksamen",
+            "text": "(Sette sammen oppgaver til en eksamen)  Oppgavetekst kommer",
+            "title": "\u00d8ving 5 - Lage eksamen"
+        },
+        {
+            "location": "/tasks/#ving-6-eksamen-til-lms",
+            "text": "(Laste opp eksamen til LMS)  Oppgavetekst kommer",
+            "title": "\u00d8ving 6 - Eksamen til LMS"
+        },
+        {
+            "location": "/notes/latex/",
+            "text": "LaTeX\n\n\nLaTeX\n er et programsystem for typesetting av dokumenter. I Numbas brukes det til \u00e5 lage pene matematiske uttrykk.\nLaTeX formler redigeres i klartekst mellom avgrensere \n$...$\n eller \n$$...$$\n og blir gjenkjent automatisk som LaTeX kommandoer, den f\u00f8rste som \ninline\n uttrykk, den andre som \ndisplaystyle\n uttrykk.\n\n\n$ x^2 - y^2 $\n blir vist som $x^2-y^2$ i en tekstlinje.\n\n\n$$ x^2 - y^2 $$\n blir vist p\u00e5 egen linje som $$x^2 - y^2$$\n\n\nMathJax er et javascript som s\u00f8rger for at LaTeX kommandoer blir vist som pene matematiske formler i nettleseren. Ved \u00e5 h\u00f8yreklikke p\u00e5 en formel og velge Show Math As > Tex Commands vil du se hvordan uttrykket er satt opp.\n\n\nHer er noen av mulighetene til \u00e5 typesette matematikk:\n\n\n\n\n\n\n\n\nUttrykk\n\n\nLaTeX\n\n\nVisning\n\n\n\n\n\n\n\n\n\n\nGreske bokstaver\n\n\n\\alpha , \\beta , \\pi\n\\delta, \\Delta, \\omega, \\Omega\n\n\n$\\alpha , \\beta , \\pi$\n$\\delta, \\Delta, \\omega, \\Omega$\n\n\n\n\n\n\nFunksjoner\n\n\n\\sin x , \\log 7 , \\arctan 1\n\n\n$ \\sin x , \\log 7 , \\arctan 1$\n\n\n\n\n\n\nSub- og superskript\n\n\na_n ,  \\log_2 8\n \n10^2 , x^3 , \\sin^2 \\phi\n\n\n$a_n ,  \\log_2 8$ \n$10^2 , x^3 , \\sin^2 \\phi$\n\n\n\n\n\n\nGrupper\n\n\n10^-3 , 10^{-3} , a_n+1 , a_{n+1}\n\n\n$ 10^-3 , 10^{-3} , a_n+1 , a_{n+1}$\n\n\n\n\n\n\nBr\u00f8ker\n\n\n\\frac {\\pi} {6}\n\\frac {x+2} {(x-3)(x+4)}\n\n\n$\\frac {\\pi} {6}$\n$\\frac{x+2}{(x-3)(x+4)}$\n\n\n\n\n\n\nParenteser\n\n\n(\\frac {x-1} {y^3})^2\n\\left(\\frac {x-1} {y^3}\\right)^2\n\n\n$(\\frac {x-1} {y^3})^2$\n$\\left(\\frac {x-1} {y^3}\\right)^2$\n\n\n\n\n\n\nRottegn\n\n\n\\sqrt {B^2 - 4 AC}\n\\sqrt[3]{-8}\n\n\n$\\sqrt {B^2 - 4 AC}$\n$\\sqrt[3]{-8}$\n\n\n\n\n\n\nIntegraler\n\n\n\\int x^2 dx = \\frac 1 3 x^3 + C\n \n\\int_0^{\\pi} \\sin x \\, dx = 2\n\n\n$\\int x^2 dx = \\frac 1 3 x^3 + C$ \n$\\int_0^{\\pi} \\sin x \\, dx = 2$\n\n\n\n\n\n\nSummetegn\n\n\n\\sum_{i=1}^{n} i = \\frac {n(n+1)}{2}\n\n\n$\\displaystyle{\\sum_{i=1}^{n} i = \\frac {n(n+1)}{2}}$\n\n\n\n\n\n\nGrenseverdi\n\n\n\\lim_{x \\to 0} \\frac {\\sin x} {x}\n\\displaystyle{\\lim_{x \\to 0} \\frac {\\sin x} {x}}\n\n\n$\\lim_{x \\to 0} \\frac {\\sin x} {x}$\n$\\displaystyle{\\lim_{x \\to 0} \\frac {\\sin x} {x}}$\n\n\n\n\n\n\nMatriser\n\n\n---\n\n\n---\n\n\n\n\n\n\nDefinisjon\n\n\n|x| = \\begin{cases} -x,  & x < 0 \\\\\\ x, & x \\ge 0 \\end{cases}\n\n\n$\\lvert x\\rvert =\\begin{cases}-x,  & x < 0 \\\\x, & x \\ge 0\\end{cases}$\n\n\n\n\n\n\nAvstand\n\n\na \\; b\na \\: b\na \\quad b\n \na \\qquad b\n\n\n$a\\,b$\n$a\\;b$\n$a\\quad b$\n$a\\qquad b$\n\n\n\n\n\n\nNoen tegn\n\n\n---\n\n\n---\n\n\n\n\n\n\nTekst\n\n\n\\text{Svaret er: } \\pi\n\n\n$\\text{Svaret er: } \\pi$\n\n\n\n\n\n\n\n\n\n\n\nLaTeX i Numbas\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nOppgaver\n\n\nasdf asdf",
+            "title": "LaTeX"
+        },
+        {
+            "location": "/notes/latex/#latex",
+            "text": "LaTeX  er et programsystem for typesetting av dokumenter. I Numbas brukes det til \u00e5 lage pene matematiske uttrykk.\nLaTeX formler redigeres i klartekst mellom avgrensere  $...$  eller  $$...$$  og blir gjenkjent automatisk som LaTeX kommandoer, den f\u00f8rste som  inline  uttrykk, den andre som  displaystyle  uttrykk.  $ x^2 - y^2 $  blir vist som $x^2-y^2$ i en tekstlinje.  $$ x^2 - y^2 $$  blir vist p\u00e5 egen linje som $$x^2 - y^2$$  MathJax er et javascript som s\u00f8rger for at LaTeX kommandoer blir vist som pene matematiske formler i nettleseren. Ved \u00e5 h\u00f8yreklikke p\u00e5 en formel og velge Show Math As > Tex Commands vil du se hvordan uttrykket er satt opp.  Her er noen av mulighetene til \u00e5 typesette matematikk:     Uttrykk  LaTeX  Visning      Greske bokstaver  \\alpha , \\beta , \\pi \\delta, \\Delta, \\omega, \\Omega  $\\alpha , \\beta , \\pi$ $\\delta, \\Delta, \\omega, \\Omega$    Funksjoner  \\sin x , \\log 7 , \\arctan 1  $ \\sin x , \\log 7 , \\arctan 1$    Sub- og superskript  a_n ,  \\log_2 8   10^2 , x^3 , \\sin^2 \\phi  $a_n ,  \\log_2 8$  $10^2 , x^3 , \\sin^2 \\phi$    Grupper  10^-3 , 10^{-3} , a_n+1 , a_{n+1}  $ 10^-3 , 10^{-3} , a_n+1 , a_{n+1}$    Br\u00f8ker  \\frac {\\pi} {6} \\frac {x+2} {(x-3)(x+4)}  $\\frac {\\pi} {6}$ $\\frac{x+2}{(x-3)(x+4)}$    Parenteser  (\\frac {x-1} {y^3})^2 \\left(\\frac {x-1} {y^3}\\right)^2  $(\\frac {x-1} {y^3})^2$ $\\left(\\frac {x-1} {y^3}\\right)^2$    Rottegn  \\sqrt {B^2 - 4 AC} \\sqrt[3]{-8}  $\\sqrt {B^2 - 4 AC}$ $\\sqrt[3]{-8}$    Integraler  \\int x^2 dx = \\frac 1 3 x^3 + C   \\int_0^{\\pi} \\sin x \\, dx = 2  $\\int x^2 dx = \\frac 1 3 x^3 + C$  $\\int_0^{\\pi} \\sin x \\, dx = 2$    Summetegn  \\sum_{i=1}^{n} i = \\frac {n(n+1)}{2}  $\\displaystyle{\\sum_{i=1}^{n} i = \\frac {n(n+1)}{2}}$    Grenseverdi  \\lim_{x \\to 0} \\frac {\\sin x} {x} \\displaystyle{\\lim_{x \\to 0} \\frac {\\sin x} {x}}  $\\lim_{x \\to 0} \\frac {\\sin x} {x}$ $\\displaystyle{\\lim_{x \\to 0} \\frac {\\sin x} {x}}$    Matriser  ---  ---    Definisjon  |x| = \\begin{cases} -x,  & x < 0 \\\\\\ x, & x \\ge 0 \\end{cases}  $\\lvert x\\rvert =\\begin{cases}-x,  & x < 0 \\\\x, & x \\ge 0\\end{cases}$    Avstand  a \\; b a \\: b a \\quad b   a \\qquad b  $a\\,b$ $a\\;b$ $a\\quad b$ $a\\qquad b$    Noen tegn  ---  ---    Tekst  \\text{Svaret er: } \\pi  $\\text{Svaret er: } \\pi$",
+            "title": "LaTeX"
+        },
+        {
+            "location": "/notes/latex/#latex-i-numbas",
+            "text": "mkdocs new [dir-name]  - Create a new project.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.",
+            "title": "LaTeX i Numbas"
+        },
+        {
+            "location": "/notes/latex/#oppgaver",
+            "text": "asdf asdf",
+            "title": "Oppgaver"
+        },
+        {
+            "location": "/notes/numbasquestions/",
+            "text": "Oppgavetyper\n\n\nAv de mange oppgavetypene i Numbas vil vi konsentrere oss om \n\n\n\n\nMathematical expression\n\n\nNumber entry\n\n\nMatrix entry\n\n\n\n\n\n\n\n\n\n\nSp\u00f8rsm\u00e5l\n\n\nBrukes til\n\n\n\n\n\n\n\n\n\n\nInformation only\n\n\nNormally used in Steps; no student input.\n\n\n\n\n\n\nGap-fill\n\n\nPlace multiple inputs inside the prompt text.\n\n\n\n\n\n\nMathematical expression\n\n\nAlgebraic answer; instant rendering of input.\n\n\n\n\n\n\nNumber entry\n\n\nAccept a number within a range; can require certain number of sig. fig.s or d.p.\n\n\n\n\n\n\nMatrix entry\n\n\nAnswer is a matrix of numbers; individual cells marked like number entry.\n\n\n\n\n\n\nMatch text pattern\n\n\nFree text input. Must match given regular expression.\n\n\n\n\n\n\nChoose one from a list\n\n\nStudent picks one answer from a multiple choice list.\n\n\n\n\n\n\nChoose several from a list\n\n\nStudent picks any number of answers from a list; can specify max. and min. choices.\n\n\n\n\n\n\nMatch choices with answers\n\n\n2D grid; match items from two lists. Can allow one answer per choice or many.",
+            "title": "Numbas oppgavetyper"
+        },
+        {
+            "location": "/notes/numbasquestions/#oppgavetyper",
+            "text": "Av de mange oppgavetypene i Numbas vil vi konsentrere oss om    Mathematical expression  Number entry  Matrix entry      Sp\u00f8rsm\u00e5l  Brukes til      Information only  Normally used in Steps; no student input.    Gap-fill  Place multiple inputs inside the prompt text.    Mathematical expression  Algebraic answer; instant rendering of input.    Number entry  Accept a number within a range; can require certain number of sig. fig.s or d.p.    Matrix entry  Answer is a matrix of numbers; individual cells marked like number entry.    Match text pattern  Free text input. Must match given regular expression.    Choose one from a list  Student picks one answer from a multiple choice list.    Choose several from a list  Student picks any number of answers from a list; can specify max. and min. choices.    Match choices with answers  2D grid; match items from two lists. Can allow one answer per choice or many.",
+            "title": "Oppgavetyper"
+        },
+        {
+            "location": "/notes/variabler/",
+            "text": "Variabler\n\n\nNotater kommer",
+            "title": "Variabler"
+        },
+        {
+            "location": "/notes/variabler/#variabler",
+            "text": "Notater kommer",
+            "title": "Variabler"
+        },
+        {
+            "location": "/notes/latexvariabler/",
+            "text": "Latexvariabler\n\n\nNotater kommer",
+            "title": "Variabler i LaTeX"
+        },
+        {
+            "location": "/notes/latexvariabler/#latexvariabler",
+            "text": "Notater kommer",
+            "title": "Latexvariabler"
+        }
+    ]
+}
