@@ -13,12 +13,17 @@
         
     <url>
      <loc>None/tasks/task1/</loc>
+<<<<<<< HEAD
      <lastmod>2016-05-11</lastmod>
+=======
+     <lastmod>2016-05-09</lastmod>
+>>>>>>> b209b183dd8b8450bc248ef6932b63c2e69e5468
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/tasks/task2/</loc>
+<<<<<<< HEAD
      <lastmod>2016-05-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -26,24 +31,47 @@
     <url>
      <loc>None/tasks/task3/</loc>
      <lastmod>2016-05-11</lastmod>
+=======
+     <lastmod>2016-05-09</lastmod>
+>>>>>>> b209b183dd8b8450bc248ef6932b63c2e69e5468
      <changefreq>daily</changefreq>
     </url>
         
     <url>
+<<<<<<< HEAD
      <loc>None/tasks/task4/</loc>
      <lastmod>2016-05-11</lastmod>
+=======
+     <loc>None/tasks/task3/</loc>
+     <lastmod>2016-05-09</lastmod>
+>>>>>>> b209b183dd8b8450bc248ef6932b63c2e69e5468
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+<<<<<<< HEAD
+     <loc>None/tasks/task5/</loc>
+     <lastmod>2016-05-11</lastmod>
+=======
+     <loc>None/tasks/task4/</loc>
+     <lastmod>2016-05-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/tasks/task5/</loc>
-     <lastmod>2016-05-11</lastmod>
+     <lastmod>2016-05-09</lastmod>
+>>>>>>> b209b183dd8b8450bc248ef6932b63c2e69e5468
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/tasks/task6/</loc>
+<<<<<<< HEAD
      <lastmod>2016-05-11</lastmod>
+=======
+     <lastmod>2016-05-09</lastmod>
+>>>>>>> b209b183dd8b8450bc248ef6932b63c2e69e5468
      <changefreq>daily</changefreq>
     </url>
         

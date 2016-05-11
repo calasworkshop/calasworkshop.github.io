@@ -22,28 +22,50 @@
         },
         {
             "location": "/tasks/task1/",
+<<<<<<< HEAD
             "text": "\u00d8ving 1 - Editor\n\n\n\n\nAlle \u00f8vinger utf\u00f8res i \nNumbas Editor\n.\n\nLag din egen konto der, logg deg inn og la Numbas Editor v\u00e6re \u00e5pen i et eget vindu i nettleseren mens du arbeider med kurset. Bruk ogs\u00e5 \nNumbas egen dokumentasjon\n til \u00e5 finne ut av detaljer som ikke blir gjennomg\u00e5tt.\n\n\n\n\n\n(Om editor, prosjektorganisering, metadata)\n\n\nOppgavetekst kommer",
             "title": "\u00d8ving 1 - Om editor, prosjekter, metadata"
         },
         {
             "location": "/tasks/task1/#ving-1-editor",
             "text": "Alle \u00f8vinger utf\u00f8res i  Numbas Editor . \nLag din egen konto der, logg deg inn og la Numbas Editor v\u00e6re \u00e5pen i et eget vindu i nettleseren mens du arbeider med kurset. Bruk ogs\u00e5  Numbas egen dokumentasjon  til \u00e5 finne ut av detaljer som ikke blir gjennomg\u00e5tt.   (Om editor, prosjektorganisering, metadata)  Oppgavetekst kommer",
+=======
+            "text": "\u00d8ving 1 - Editor\n\n\n(Om editor, prosjektorganisering, metadata)\n\n\nOppgavetekst kommer",
+            "title": "\u00d8ving 1"
+        },
+        {
+            "location": "/tasks/task1/#ving-1-editor",
+            "text": "(Om editor, prosjektorganisering, metadata)  Oppgavetekst kommer",
+>>>>>>> b209b183dd8b8450bc248ef6932b63c2e69e5468
             "title": "\u00d8ving 1 - Editor"
         },
         {
             "location": "/tasks/task2/",
+<<<<<<< HEAD
             "text": "\u00d8ving 2 - Enkel oppgave\n\n\n(Enkel oppgave med konstante tall)\n\n\n\n\nVi lager en oppgave som henter inn et algebraisk utttryk som svar. Numbas sjekker om svaret p\u00e5 en algebraisk oppgave er riktig ved \u00e5 sette inn tilfeldige verdier for de ukjente i studentens svar - og teste mot \n\n\n\n\n\nOppgavetekst kommer",
             "title": "\u00d8ving 2 - Enkel oppgave med konstante tall"
         },
         {
             "location": "/tasks/task2/#ving-2-enkel-oppgave",
             "text": "(Enkel oppgave med konstante tall)   Vi lager en oppgave som henter inn et algebraisk utttryk som svar. Numbas sjekker om svaret p\u00e5 en algebraisk oppgave er riktig ved \u00e5 sette inn tilfeldige verdier for de ukjente i studentens svar - og teste mot    Oppgavetekst kommer",
+=======
+            "text": "\u00d8ving 2 - Enkel oppgave\n\n\n(Enkel oppgave med konstante tal)\n\n\nOppgavetekst kommer",
+            "title": "\u00d8ving 2"
+        },
+        {
+            "location": "/tasks/task2/#ving-2-enkel-oppgave",
+            "text": "(Enkel oppgave med konstante tal)  Oppgavetekst kommer",
+>>>>>>> b209b183dd8b8450bc248ef6932b63c2e69e5468
             "title": "\u00d8ving 2 - Enkel oppgave"
         },
         {
             "location": "/tasks/task3/",
             "text": "\u00d8ving 3 - Oppgave med variabler\n\n\n(Oppgave med variabler)\n\n\nOppgavetekst kommer",
+<<<<<<< HEAD
             "title": "\u00d8ving 3 - Oppgave med variabler"
+=======
+            "title": "\u00d8ving 3"
+>>>>>>> b209b183dd8b8450bc248ef6932b63c2e69e5468
         },
         {
             "location": "/tasks/task3/#ving-3-oppgave-med-variabler",
@@ -53,7 +75,11 @@
         {
             "location": "/tasks/task4/",
             "text": "\u00d8ving 4 - Tips og svarforslag\n\n\n(Oppgave med Tips og Svarforslag)\n\n\nOppgavetekst kommer",
+<<<<<<< HEAD
             "title": "\u00d8ving 4 - Oppgave med Tips og Svarforslag"
+=======
+            "title": "\u00d8ving 4"
+>>>>>>> b209b183dd8b8450bc248ef6932b63c2e69e5468
         },
         {
             "location": "/tasks/task4/#ving-4-tips-og-svarforslag",
@@ -63,7 +89,11 @@
         {
             "location": "/tasks/task5/",
             "text": "\u00d8ving 5 - Lage eksamen\n\n\n(Sette sammen oppgaver til en eksamen)\n\n\nOppgavetekst kommer",
+<<<<<<< HEAD
             "title": "\u00d8ving 5 - Sette sammen oppgaver til eksamen"
+=======
+            "title": "\u00d8ving 5"
+>>>>>>> b209b183dd8b8450bc248ef6932b63c2e69e5468
         },
         {
             "location": "/tasks/task5/#ving-5-lage-eksamen",
@@ -73,7 +103,11 @@
         {
             "location": "/tasks/task6/",
             "text": "\u00d8ving 6 - Eksamen til LMS\n\n\n(Laste opp eksamen til LMS)\n\n\nOppgavetekst kommer",
+<<<<<<< HEAD
             "title": "\u00d8ving 6 - Laste oppgaver og eksamen til LMS"
+=======
+            "title": "\u00d8ving 6"
+>>>>>>> b209b183dd8b8450bc248ef6932b63c2e69e5468
         },
         {
             "location": "/tasks/task6/#ving-6-eksamen-til-lms",
