@@ -9,7 +9,7 @@
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
 
-	<title>Øving 1 - Om editor, prosjekter, metadata - calasWorkshop</title>
+	<title>Øving 2 - Om editor, prosjekter, metadata - calasWorkshop</title>
 
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
@@ -65,14 +65,14 @@
                         <ul class="dropdown-menu">
                         
                             
-<li class="active">
-    <a href="./">Øving 1 - Om editor, prosjekter, metadata</a>
+<li >
+    <a href="./">Øving 1 - Enkel oppgave med konstante tall</a>
 </li>
 
                         
                             
-<li >
-    <a href="../task2/">Øving 2 - Enkel oppgave med konstante tall</a>
+<li class="active">
+    <a href="./">Øving 2 - Om editor, prosjekter, metadata</a>
 </li>
 
                         
@@ -156,12 +156,12 @@
                 </li>
                 
                     <li >
-                        <a rel="next" href="../..">
+                        <a rel="next" href="./">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../task2/">
+                        <a rel="prev" href="../task3/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -177,21 +177,30 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#ving-1-editor">Øving 1 - Editor</a></li>
+        <li class="main active"><a href="#ving-1-enkel-oppgave-med-konstante-tall">Øving 1 - Enkel oppgave med konstante tall</a></li>
+        
+            <li><a href="#veiledning">Veiledning</a></li>
         
     
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="ving-1-editor">Øving 1 - Editor</h1>
+<h1 id="ving-1-enkel-oppgave-med-konstante-tall">Øving 1 - Enkel oppgave med konstante tall</h1>
 <div class="admonition note">
-<p>Alle øvinger utføres i <a target="_blank" href="https://numbas.mathcentre.ac.uk/">Numbas Editor</a>.<br>
-Lag din egen konto der, logg deg inn og la Numbas Editor være åpen i et eget vindu i nettleseren mens du arbeider med kurset. Bruk også <a target="_blank" href="http://numbas-editor.readthedocs.io/en/latest/">Numbas egen dokumentasjon</a> til å finne ut av detaljer som ikke blir gjennomgått.</p>
+<p><b>Oppdrag</b></p>
+<p>Lage en oppgave som gir følgende introduksjon:</p>
+<p style="background-color:#dfd;">Skriv om uttrykket \[ 3 - \frac 4 5 + \frac{6}{\frac 7 8}&nbsp;\]&nbsp;til en uekte&nbsp;br&oslash;k.</p>
+<p>Bruk spørsmålstypen Gap-fill der svarboksen er av typen Mathematical expression til å hente inn svaret i en layout omtrent slik:</p>
+<p style="background-color:#fff;">$ 3 - \frac 4 5 + \frac{6}{\frac 7 8}&nbsp;$ &nbsp; = &nbsp; [&nbsp;&nbsp;&nbsp;&nbsp;]</p>
+<p>Det skal ikke være mulig å få rett svar ved å taste inn selve oppgaven.</p>
 </div>
 
-<p>(Om editor, prosjektorganisering, metadata)</p>
-<p><em>Oppgavetekst kommer</em></p></div>
+<h3 id="veiledning">Veiledning</h3>
+<p>Start Numbas Editor, velg <strong>Questions &gt; Create a new question</strong> og gå rett til <strong>Statement</strong> der du taster inn innledningen i det grønne feltet ovenfor. Hvis alt går greit vil du se din LaTeX kode omgjort til 2D uttrykk til høyre for inntastingen - eller du kan klikke et sted i et LaTeX-uttrykk og det spretter opp en visningsboks. Prøv dette.</p>
+<p>En oppgave med Gaps lar oss plassere svarboksene der vi vil i stedet for i en boks nederst på egen linje. Derfor bør du velge <strong>Parts &gt; Add a part</strong> og endre den automatisk oppsatte typen fra Information only til <strong>Gap-fill</strong>. Så taster du inn i editoren slik det er vist i det hvite feltet ovenfor. Velg <strong>Add a gap</strong> og du vil se at det foreslås et Gap med Mathematical expression. Under fanen <strong>Marking</strong> taster du inn svaret på oppgaven. Men, vi har ennå ikke plassert et Gap i oppgaveteksten - det gjøres under <strong>a) Gap-fill</strong> der du klikker i editoren der du vil ha det satt inn - velger <strong>G</strong> (Insert Gap) fra menyen. Som du ser blir Gaps nummerert fra 0 og oppover.</p>
+<p>For å sikre at en student ikke kan få rett svar ved å taste inn det opprinnelige uttrykket setter du restriksjoner på tegn og eventuelt lengde i svaret.</p>
+<p>Hvis du vil se min utgave av denne oppgaven må du søke den opp i oppgavedatabasen - men det kan du vel vente med til du har strevd litt mer.</p></div>
             
         </div>
 
