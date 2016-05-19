@@ -12,7 +12,7 @@
 	<title>Øving 2 - Om editor, prosjekter, metadata - calasWorkshop</title>
 
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="../../css/highlight.css">
         <link href="../../extra.css" rel="stylesheet">
@@ -144,7 +144,7 @@
                 
                 
                 <li><a target="_blank" href="https://numbas.mathcentre.ac.uk/">Numbas Editor</a></li>
-                <li><a target="_blank" href="http://numbas-editor.readthedocs.io/en/latest/index.html">Numbas Documentation</a></li> 
+                <li><a target="_blank" href="http://numbas-editor.readthedocs.io/en/latest/index.html">Numbas Documentation</a></li>                
                 </ul>
             
 
@@ -154,17 +154,6 @@
                         <i class="fa fa-search"></i> Search
                     </a>
                 </li>
-                
-                    <li >
-                        <a rel="next" href="./">
-                            <i class="fa fa-arrow-left"></i> Previous
-                        </a>
-                    </li>
-                    <li >
-                        <a rel="prev" href="../task3/">
-                            Next <i class="fa fa-arrow-right"></i>
-                        </a>
-                    </li>
                 
                 
             </ul>
@@ -181,6 +170,8 @@
         
             <li><a href="#veiledning">Veiledning</a></li>
         
+            <li><a href="#extra">Extra</a></li>
+        
     
     </ul>
 </div></div>
@@ -190,16 +181,34 @@
 <div class="admonition note">
 <p><b>Oppdrag</b></p>
 <p>Lage en oppgave som gir følgende introduksjon:</p>
-<p style="background-color:#dfd;">Skriv om uttrykket \[ 3 - \frac 4 5 + \frac{6}{\frac 7 8}&nbsp;\]&nbsp;til en uekte&nbsp;br&oslash;k.</p>
+<p style="background-color:#dfd;">Temperaturen $C$ i grader Celcius kan regnes om til temperaturen $F$ i grader Fahrenheit etter formelen \[ F = \frac 9 5 C + 32 \]</p>
 <p>Bruk spørsmålstypen Gap-fill der svarboksen er av typen Mathematical expression til å hente inn svaret i en layout omtrent slik:</p>
-<p style="background-color:#fff;">$ 3 - \frac 4 5 + \frac{6}{\frac 7 8}&nbsp;$ &nbsp; = &nbsp; [&nbsp;&nbsp;&nbsp;&nbsp;]</p>
-<p>Det skal ikke være mulig å få rett svar ved å taste inn selve oppgaven.</p>
+<p style="background-color:#fff;">&nbsp;Lag en formel der temperaturen $C$ kan beregnes når du kjenner temperaturen $F$,<br><br>&nbsp;$F$ &nbsp; = &nbsp; [&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]</p>
 </div>
 
 <h3 id="veiledning">Veiledning</h3>
 <p>Start Numbas Editor, velg <strong>Questions &gt; Create a new question</strong> og gå rett til <strong>Statement</strong> der du taster inn innledningen i det grønne feltet ovenfor. Hvis alt går greit vil du se din LaTeX kode omgjort til 2D uttrykk til høyre for inntastingen - eller du kan klikke et sted i et LaTeX-uttrykk og det spretter opp en visningsboks. Prøv dette.</p>
-<p>En oppgave med Gaps lar oss plassere svarboksene der vi vil i stedet for i en boks nederst på egen linje. Derfor bør du velge <strong>Parts &gt; Add a part</strong> og endre den automatisk oppsatte typen fra Information only til <strong>Gap-fill</strong>. Så taster du inn i editoren slik det er vist i det hvite feltet ovenfor. Velg <strong>Add a gap</strong> og du vil se at det foreslås et Gap med Mathematical expression. Under fanen <strong>Marking</strong> taster du inn svaret på oppgaven. Men, vi har ennå ikke plassert et Gap i oppgaveteksten - det gjøres under <strong>a) Gap-fill</strong> der du klikker i editoren der du vil ha det satt inn - velger <strong>G</strong> (Insert Gap) fra menyen. Som du ser blir Gaps nummerert fra 0 og oppover.</p>
-<p>For å sikre at en student ikke kan få rett svar ved å taste inn det opprinnelige uttrykket setter du restriksjoner på tegn og eventuelt lengde i svaret.</p>
+<p>En oppgave med Gaps lar oss plassere svarboksene der vi vil i stedet for i en boks nederst på egen linje. Derfor bør du velge <strong>Parts &gt; Add a part</strong> og endre den automatisk oppsatte typen fra Information only til <strong>Gap-fill</strong>. Så taster du inn i editoren som <strong>Prompt</strong> slik det er vist i det hvite feltet ovenfor. Velg <strong>Add a gap</strong> og du vil se at det foreslås et Gap med Mathematical expression. Under fanen <strong>Marking</strong> taster du inn svaret på oppgaven. Men, vi har ennå ikke plassert et Gap i oppgaveteksten - det gjøres i Promptet under <strong>a) Gap-fill</strong> der du klikker i editoren der du vil ha det satt inn - velger <strong>G</strong> (Insert Gap) fra menyen. Som du ser blir Gaps nummerert fra 0 og oppover.</p>
+<p>Er det nødvendig å sette restriksjoner på tegn og eventuelt lengde i svaret?</p>
+<h3 id="extra">Extra</h3>
+<p>Legg til to delspørsmål slik at oppgaven blir presentert slik:
+<div class="admonition note">
+<p style="background-color:#fff;">
+<b>a)</b>
+<br>
+&nbsp;Lag en formel der temperaturen $C$ kan beregnes når du kjenner temperaturen $F$,<br><br>&nbsp;$F$ &nbsp; = &nbsp; [&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]<br><br>
+<b>b)</b>
+<br>
+&nbsp;Vann koker ved temperaturen 100 <sup>o</sup>C. Hva tilsvarer det i <sup>o</sup>F?<br><br>
+&nbsp;Vann koker ved [&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;] <sup>o</sup>F.
+<br><br>
+<b>c)</b>
+<br>
+&nbsp;Ved hvilken temperatur vil et termometer med skala i <sup>o</sup>F og et termometer med skala i <sup>o</sup>C vise likt?<br><br>
+&nbsp;De viser likt ved [&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;] <sup>o</sup>F/<sup>o</sup>C.
+</p>
+</div></p>
+<p>I delspørsmål b) og c) er svarene tall som legges inn i Gaps med svartype Number entry. I dette tilfellet blir svarene heltall og du kan sette det som restriksjon.</p>
 <p>Hvis du vil se min utgave av denne oppgaven må du søke den opp i oppgavedatabasen - men det kan du vel vente med til du har strevd litt mer.</p></div>
             
         </div>
