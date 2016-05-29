@@ -9,7 +9,7 @@
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
 
-	<title>Øving 3 - Oppgave med variabler - calasWorkshop</title>
+	<title>Lineær syntaks, JME - calasWorkshop</title>
 
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
@@ -60,43 +60,43 @@
                 
                 
                 
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Øvinger <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
                             
 <li >
-    <a href="../task1/">Øving 1 - Enkel oppgave med konstante tall</a>
+    <a href="../../tasks/task1/">Øving 1 - Enkel oppgave med konstante tall</a>
 </li>
 
                         
                             
 <li >
-    <a href="../task2/">Øving 2 - Om editor, prosjekter, metadata</a>
-</li>
-
-                        
-                            
-<li class="active">
-    <a href="./">Øving 3 - Oppgave med variabler</a>
+    <a href="../../tasks/task2/">Øving 2 - Om editor, prosjekter, metadata</a>
 </li>
 
                         
                             
 <li >
-    <a href="../task4/">Øving 4 - Oppgave med Tips og Svarforslag</a>
+    <a href="../../tasks/task3/">Øving 3 - Oppgave med variabler</a>
 </li>
 
                         
                             
 <li >
-    <a href="../task5/">Øving 5 - Sette sammen oppgaver til eksamen</a>
+    <a href="../../tasks/task4/">Øving 4 - Oppgave med Tips og Svarforslag</a>
 </li>
 
                         
                             
 <li >
-    <a href="../task6/">Øving 6 - Laste oppgaver og eksamen til LMS</a>
+    <a href="../../tasks/task5/">Øving 5 - Sette sammen oppgaver til eksamen</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../tasks/task6/">Øving 6 - Laste oppgaver og eksamen til LMS</a>
 </li>
 
                         
@@ -105,43 +105,43 @@
                 
                 
                 
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Notater <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
                             
 <li >
-    <a href="../../notes/inshort/">Numbas - kort fortalt</a>
+    <a href="../inshort/">Numbas - kort fortalt</a>
 </li>
 
                         
                             
 <li >
-    <a href="../../notes/numbasquestions/">Numbas oppgavetyper</a>
+    <a href="../numbasquestions/">Numbas oppgavetyper</a>
 </li>
 
                         
                             
 <li >
-    <a href="../../notes/latex/">LaTeX</a>
+    <a href="../latex/">LaTeX</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="./">Lineær syntaks, JME</a>
 </li>
 
                         
                             
 <li >
-    <a href="../../notes/flatmath/">Lineær syntaks, JME</a>
+    <a href="../variabler/">Variabler</a>
 </li>
 
                         
                             
 <li >
-    <a href="../../notes/variabler/">Variabler</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../../notes/latexvariabler/">Variabler i LaTeX</a>
+    <a href="../latexvariabler/">Variabler i LaTeX</a>
 </li>
 
                         
@@ -160,12 +160,12 @@
                 </li>
                 
                     <li >
-                        <a rel="next" href="../task2/">
+                        <a rel="next" href="../latex/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../task4/">
+                        <a rel="prev" href="../variabler/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -181,24 +181,98 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#ving-3-oppgave-med-variabler">Øving 3 - Oppgave med variabler</a></li>
+        <li class="main active"><a href="#liner-syntaks-jme">Lineær syntaks, JME</a></li>
+        
+            <li><a href="#evaluering">Evaluering</a></li>
+        
+            <li><a href="#jme">JME</a></li>
+        
+            <li><a href="#rottegn-funksjoner">Rottegn, funksjoner</a></li>
         
     
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="ving-3-oppgave-med-variabler">Øving 3 - Oppgave med variabler</h1>
-<div class="admonition note">
-<p><b>Oppdrag</b></p>
-<p>Lage et spørsmål om å faktorisere et andregrads polynom med randomiserte nullpunkter</p>
-<p>Lag en kort introduksjon under **Statement**
-<p style="background-color:#dfd;">Faktoriser følgende polynomer av andre grad</p>
-<p>Bruk spørsmålstypen Gap-fill der svarboksen er av typen Mathematical expression til å hente inn svaret i en layout omtrent slik:</p>
-<p style="background-color:#fff;">Faktoriser $x^2-2 x - 3$ &nbsp; = &nbsp; [&nbsp;&nbsp;&nbsp;&nbsp;]</p>
-<p>Det skal ikke være mulig å få rett svar ved å taste inn selve oppgaven.</p>
-<p>Velg **Variables** </p>
-</div></div>
+<h2 id="liner-syntaks-jme">Lineær syntaks, JME</h2>
+<p>Studentene taster inn svar i enlinje syntaks slik de er vant til i matteapper som Matlab, Octave, WolframAlpha, GeoGebra, Maxima, Python, CAS kalkkulatorer og regneark. Inntastingen blir fortløpende evaluert av JME som sjekker at uttrykket er matematisk gyldig og gir hint underveis om det tastes feil. Studentens inntasting kan vises som LaTeX uttrykk.</p>
+<table>
+<thead>
+<tr>
+<th>Studenten taster</th>
+<th>Studenten ser</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span style="font-family:Consolas; font-size:110%;border-style:solid; border-width:1px;border-color:#aaa">&nbsp;x/(x-1&nbsp;</span></td>
+<td><span style="background-color:#fdd; color:red;padding:10px"><b>(!)</b> Høyre parentes mangler.</span></td>
+</tr>
+<tr>
+<td><span style="font-family:Consolas; font-size:110%;border-style:solid; border-width:1px;border-color:#aaa">&nbsp;x/(x-1)&nbsp;</span></td>
+<td>$\bbox[lightgray]{\displaystyle{\frac {x}{x-1}}}$</td>
+</tr>
+<tr>
+<td><span style="font-family:Consolas; font-size:110%;border-style:solid; border-width:1px;border-color:#aaa">&nbsp;(x-y)/(sqrt(x)-sqrt(y))&nbsp;</span></td>
+<td>$\bbox[lightgray]{\displaystyle{\frac{ x - y }{ \sqrt{ x } - \sqrt{ y } }}}$</td>
+</tr>
+<tr>
+<td><span style="font-family:Consolas; font-size:110%;border-style:solid; border-width:1px;border-color:#aaa">&nbsp;1+2*3/4-5^6&nbsp;</span></td>
+<td>$\bbox[lightgray]{\displaystyle{1 + \frac{ 2 \times 3 }{ 4 } - 5^{ 6 }}}$</td>
+</tr>
+</tbody>
+</table>
+<h3 id="evaluering">Evaluering</h3>
+<p>Et regneuttrykk evalueres etter 3 enkle regler.</p>
+<ul>
+<li>Evaluering skjer fra venstre mot høyre</li>
+<li>evaluering skjer etter operatorpresedens</li>
+<li>parenteser overstyrer presedens</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Presedens</th>
+<th>Operatortegn</th>
+<th>Operasjon</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>(), []</td>
+<td>Parenteser</td>
+</tr>
+<tr>
+<td>2</td>
+<td>!</td>
+<td>Fakultet</td>
+</tr>
+<tr>
+<td>3</td>
+<td>^</td>
+<td>Eksponenter</td>
+</tr>
+<tr>
+<td>4</td>
+<td>-</td>
+<td>Negering, 'minus'</td>
+</tr>
+<tr>
+<td>5</td>
+<td>* /</td>
+<td>Multiplikasjon og divisjon</td>
+</tr>
+<tr>
+<td>6</td>
+<td>+ -</td>
+<td>Addisjon og subtraksjon</td>
+</tr>
+</tbody>
+</table>
+<h3 id="jme">JME</h3>
+<p>JME er en </p>
+<h3 id="rottegn-funksjoner">Rottegn, funksjoner</h3></div>
             
         </div>
 

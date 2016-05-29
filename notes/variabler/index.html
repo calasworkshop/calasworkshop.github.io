@@ -72,7 +72,7 @@
                         
                             
 <li >
-    <a href="../../tasks/task1/">Øving 2 - Om editor, prosjekter, metadata</a>
+    <a href="../../tasks/task2/">Øving 2 - Om editor, prosjekter, metadata</a>
 </li>
 
                         
@@ -117,13 +117,19 @@
                         
                             
 <li >
+    <a href="../numbasquestions/">Numbas oppgavetyper</a>
+</li>
+
+                        
+                            
+<li >
     <a href="../latex/">LaTeX</a>
 </li>
 
                         
                             
 <li >
-    <a href="../numbasquestions/">Numbas oppgavetyper</a>
+    <a href="../flatmath/">Lineær syntaks, JME</a>
 </li>
 
                         
@@ -143,8 +149,6 @@
                     </li>
                 
                 
-                <li><a target="_blank" href="https://numbas.mathcentre.ac.uk/">Numbas Editor</a></li>
-                <li><a target="_blank" href="http://numbas-editor.readthedocs.io/en/latest/index.html">Numbas Documentation</a></li>                
                 </ul>
             
 
@@ -154,6 +158,17 @@
                         <i class="fa fa-search"></i> Search
                     </a>
                 </li>
+                
+                    <li >
+                        <a rel="next" href="../flatmath/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../latexvariabler/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
                 
                 
             </ul>
@@ -174,7 +189,15 @@
                 <div class="col-md-9" role="main">
 
 <h3 id="variabler">Variabler</h3>
-<p><em>Notater kommer</em></p></div>
+<p><em>Notater kommer</em>
+<p>The question: &nbsp;&nbsp;&nbsp;Factorize $x^2 - 2 x - 3$ &nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;[&nbsp;&nbsp;&nbsp;]</p>
+<p>Edited as:</p>
+<p><code>Factorize</code>&nbsp;&nbsp;&nbsp;<code>$\simplify{x^2 - {a+b}<em>x + {a</em>b}}$</code></p>
+<p>Variables: <code>a&nbsp;=&nbsp;random(-5..5&nbsp;except&nbsp;0), b&nbsp;=&nbsp;random(-5..5,&nbsp;except[0,&nbsp;a])</code></p>
+<p>Correct answer: <code>(x-{a})(x-{b})</code></p>
+                    <sub>marked by numeric evaluation and syntax check</sub></li>
+                    <li>Student Ane answers: &nbsp;&nbsp;[<code>(x-3)<em>(x+1)</code>]&nbsp; <small><span style="background-color:#eee;">$(x-3)(x+1)$</span></small><br>
+                    Student Ben answers: &nbsp;&nbsp;[<code>(x+1)</em>(-3+x)</code>]</li></p></div>
             
         </div>
 
