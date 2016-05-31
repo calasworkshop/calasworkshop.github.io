@@ -149,6 +149,8 @@
                     </li>
                 
                 
+                <li><a href="https://numbas.mathcentre.ac.uk/">Numbas editor</a>
+                <li><a href="http://numbas-editor.readthedocs.io/en/latest/#">Numbas documentation</a>
                 </ul>
             
 
@@ -176,15 +178,14 @@
         
             <li><a href="#jme">JME</a></li>
         
-            <li><a href="#rottegn-funksjoner">Rottegn, funksjoner</a></li>
-        
     
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
 <h2 id="liner-syntaks-jme">Lineær syntaks, JME</h2>
-<p>Studentene taster inn svar i enlinje syntaks slik de er vant til i matteapper som Matlab, Octave, WolframAlpha, GeoGebra, Maxima, Python, CAS kalkkulatorer og regneark. Inntastingen blir fortløpende evaluert av JME som sjekker at uttrykket er matematisk gyldig og gir hint underveis om det tastes feil. Studentens inntasting kan vises som LaTeX uttrykk.</p>
+<p><span style="background-color:#faa;">IKKE FERDIG</span></p>
+<p>Studentene taster inn svar i enlinje syntaks slik de er vant til i matteapper som Matlab, Octave, WolframAlpha, GeoGebra, Maxima, Python, CAS kalkkulatorer og regneark. Inntastingen blir fortløpende evaluert av JME som sjekker at uttrykket er matematisk gyldig og gir hint underveis om det tastes feil. Studentens inntasting kan vises fortløpende som LaTeX uttrykk.</p>
 <table>
 <thead>
 <tr>
@@ -211,6 +212,21 @@
 </tr>
 </tbody>
 </table>
+<p>Enlinje syntaks er ikke en definert standard. De store CAS-appene avviker litt fra hverandre for eksempel i hvordan de vanlige matematiske konstantene $ e , i , \pi$ skrives og hvordan derivasjon og integrasjon settes opp. Numbas bruker syntaks omtrent som Matlab ved inntasting av uttrykk. Detaljer om syntaksen finnes i <a href="http://numbas-editor.readthedocs.io/en/latest/jme-reference.html">Numbas JME</a>. Her der de vanligste reglene oppsummert:</p>
+<ul>
+<li>
+<p>Gangetegn er <code>*</code>. Bruk gangetegn mellom alle faktorer selv om JME i visse uttrykk vil kunne tolke 'usynlige' gangetegn. $3x(x-2)$ tastes som <code>3*x*(x-2)</code>.</p>
+</li>
+<li>
+<p>Divisjonstegn er <code>/</code>. Brukes også som brøkstrek, $2-\frac {3}{\frac{4}{5}}$ tastes som <code>2-3/(4/5)</code>.</p>
+</li>
+<li>
+<p>De matematiske konstantene  $ e , i , \pi$ tastes som <code>e</code>, <code>i</code>, <code>pi</code>. Uttrykket e-opphøyd-i kan tastes med funksjonen exp(), $e^{-\frac t {0.01}}$ som <code>exp(-t/0.01)</code></p>
+</li>
+<li>
+<p>Kvadratrot kan skrives med funksjonen <code>sqrt()</code> eller som potens. $\sqrt{x^2+y^2}$ tastes som <code>sqrt(x^2+y^2)</code> eller <code>(x^2+y^2)^(1/2)</code>.</p>
+</li>
+</ul>
 <h3 id="evaluering">Evaluering</h3>
 <p>Et regneuttrykk evalueres etter 3 enkle regler.</p>
 <ul>
@@ -218,50 +234,20 @@
 <li>evaluering skjer etter operatorpresedens</li>
 <li>parenteser overstyrer presedens</li>
 </ul>
-<table>
-<thead>
-<tr>
-<th>Presedens</th>
-<th>Operatortegn</th>
-<th>Operasjon</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>(), []</td>
-<td>Parenteser</td>
-</tr>
-<tr>
-<td>2</td>
-<td>!</td>
-<td>Fakultet</td>
-</tr>
-<tr>
-<td>3</td>
-<td>^</td>
-<td>Eksponenter</td>
-</tr>
-<tr>
-<td>4</td>
-<td>-</td>
-<td>Negering, 'minus'</td>
-</tr>
-<tr>
-<td>5</td>
-<td>* /</td>
-<td>Multiplikasjon og divisjon</td>
-</tr>
-<tr>
-<td>6</td>
-<td>+ -</td>
-<td>Addisjon og subtraksjon</td>
-</tr>
-</tbody>
-</table>
+<p>Presedens gjør at noen operasjoner må vente på at viktigere operasjoner blir utført. Uttrykket <code>3 - 4^(1/2)</code> vil først få evaluert 1/2, deretter 4^(1/2)=2, og så 3-2=1. Rekkefølgen i presedens er slik,</p>
+<ol>
+  <li>&nbsp;&nbsp;<code>()</code> Parenteser</li>
+  <li>&nbsp;&nbsp;<code>^</code> Eksponenter</li>
+  <li>&nbsp;&nbsp;<code>-</code> Negering, fortegn minus</li>
+  <li>&nbsp;&nbsp;<code>*  /</code> Multiplikasjon og divisjon</li>
+  <li>&nbsp;&nbsp;<code>+  -</code> Addisjon og subtraksjon</li>  
+</ol>
+
+<p>Her er eksempler på noen matematiske uttrykk skrevet med formeleditor og på enlinje form. Det er konsekvent brukt * mellom alle ledd i en multiplikasjon. Parenteser er brukt til å gruppere tellere og nevnere eller andre deler av uttrykkene. Ekstra mellomrom mellom tall og operatorer er valgfritt.</p>
 <h3 id="jme">JME</h3>
-<p>JME er en </p>
-<h3 id="rottegn-funksjoner">Rottegn, funksjoner</h3></div>
+<p>JME er et eget regneapparat i Numbas som kan håndtere tall, tabeller, vektorer, mengder og matriser. Det kjenner også trigonometriske funksjoner, logaritmefunksjoner, funksjoner for tallbehandling, vektoraritmetikk og mange andre.</p>
+<p>Ved redigering av oppgaver kan vi bruke JME til å lage variabler med randomiserte verdier og gjøre mellomregninger. En oppgave som går ut på å faktorisere et andregradsuttrykk kan for eksempel ta utgangspunkt i nullpunktene <code>a</code>og <code>b</code> med randomiserte verdier - og lage oppgaven ut fra svaruttrykket.</p>
+<p>Altså 'Faktoriser x^2 + (a+b)x + a*b', eller 'Faktoriser x^2 + c*x + d' der JME brukes til å lage hjelpevariablene c=a+b og d=a*b. Og siden Numbas sjekker om et svar er riktig ved å evaluere studentens uttrykk for et utvalg verdier så kan vi sette også riktig svar til x^2 + (a+b)x + a*b. Som tidligere beskrevet vil Numbas (normalt) ikke kunne se forskjell på svarene x^2-4 og (x+2)*(x-2). For å teste om studenten virkelig har faktorisert kan vi sette at svaret må inneholde to parenteser.</p></div>
             
         </div>
 

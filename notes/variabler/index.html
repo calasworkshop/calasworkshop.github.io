@@ -149,6 +149,8 @@
                     </li>
                 
                 
+                <li><a href="https://numbas.mathcentre.ac.uk/">Numbas editor</a>
+                <li><a href="http://numbas-editor.readthedocs.io/en/latest/#">Numbas documentation</a>
                 </ul>
             
 
@@ -178,15 +180,21 @@
                 <div class="col-md-9" role="main">
 
 <h3 id="variabler">Variabler</h3>
-<p><em>Notater kommer</em>
+<p><span style="background-color:#faa;">IKKE FERDIG</span></p>
 <p>The question: &nbsp;&nbsp;&nbsp;Factorize $x^2 - 2 x - 3$ &nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;[&nbsp;&nbsp;&nbsp;]</p>
+
 <p>Edited as:</p>
-<p><code>Factorize</code>&nbsp;&nbsp;&nbsp;<code>$\simplify{x^2 - {a+b}<em>x + {a</em>b}}$</code></p>
+
+<p><code>Factorize</code>&nbsp;&nbsp;&nbsp;<code>$\simplify{x^2 - {a+b}*x + {a*b}}$</code></p>
+
 <p>Variables: <code>a&nbsp;=&nbsp;random(-5..5&nbsp;except&nbsp;0), b&nbsp;=&nbsp;random(-5..5,&nbsp;except[0,&nbsp;a])</code></p>
+
 <p>Correct answer: <code>(x-{a})(x-{b})</code></p>
-                    <sub>marked by numeric evaluation and syntax check</sub></li>
-                    <li>Student Ane answers: &nbsp;&nbsp;[<code>(x-3)<em>(x+1)</code>]&nbsp; <small><span style="background-color:#eee;">$(x-3)(x+1)$</span></small><br>
-                    Student Ben answers: &nbsp;&nbsp;[<code>(x+1)</em>(-3+x)</code>]</li></p></div>
+
+<pre><code>                &lt;sub&gt;marked by numeric evaluation and syntax check&lt;/sub&gt;&lt;/li&gt;
+                &lt;li&gt;Student Ane answers: &amp;nbsp;&amp;nbsp;[&lt;code&gt;(x-3)*(x+1)&lt;/code&gt;]&amp;nbsp; &lt;small&gt;&lt;span style="background-color:#eee;"&gt;$(x-3)(x+1)$&lt;/span&gt;&lt;/small&gt;&lt;br&gt;
+                Student Ben answers: &amp;nbsp;&amp;nbsp;[&lt;code&gt;(x+1)*(-3+x)&lt;/code&gt;]&lt;/li&gt;
+</code></pre></div>
             
         </div>
 
