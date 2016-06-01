@@ -186,21 +186,25 @@
 <div class="admonition note">
 <p><b>Oppdrag</b></p>
 <p>Lag en oppgave som gir følgende introduksjon:</p>
-<p style="background-color:#dfd;">Den algebraiske brøken $\displaystyle{\frac{x^2-x-20}{x^2-7x+10}}$ har et felles nullpunkt i teller og nevner. Finn dette og forkort brøken.</p>
+<p style="background-color:#dfd;">Løs likningen   $\displaystyle{\frac{3} {x-4} = -\frac 5 x}$</p>
 <p>Bruk spørsmålstypen Gap-fill der svarboksen er av typen Mathematical expression til å hente inn svaret i en layout omtrent slik:</p>
 <p style="background-color:#fff;">
-<b>a)</b><br>&nbsp;Teller og nevner er begge null for $x$ = &nbsp;<span style="border-style:solid; border-width:1px;border-color:#888">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br><br>
-<b>b)</b><br>&nbsp;Brøken $\frac{x^2-x-20}{x^2-7x+10}$ kan forkortes til &nbsp;<span style="border-style:solid; border-width:1px;border-color:#888">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+Likningen $\frac{3} {x-4} = -\frac 5 x$  har løsningen $x=$ <span style="border-style:solid; border-width:1px;border-color:#888">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br>
+<sup>(tast inn svaret som heltall eller heltallsbrøk)</sup>
 </p>
 </div>
 
 <h3 id="veiledning">Veiledning</h3>
-<p>Ta utgangspunkt i en faktorisert brøk, $\displaystyle{\frac{(x-a)(x-b)}{(x-a)(x-c)}}$ og lag brøken til spørsmålet som $\displaystyle{\frac{x^2-(a+b)x+ab}{x^2-(a+c)+ab}}$ med $a$, $b$ og $c$ som randomiserte variabler.</p>
+<p>Lag spørsmålet slik at konstantene 3, -4 og -5 ovenfor skal være randomiserte variabler. Hvis du bruker a, b og c som variabelnavn kan spørsmålet bli: </p>
+<p>Likningen $\frac{\text{a}} {x+\text{b}} = -\frac {\text{c}} x$ har løsningen $x = $ <span style="border-style:solid; border-width:1px;border-color:#888">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>.</p>
+<p>Løs den generelle likningen og finn ut om det er verdier av a, b og c som ikke bør forekomme. Ta det med når du setter opp variablene.</p>
+<p>Randomiserte variabler lages under fanen Variables. Randomiserte verdier gis et valgfritt navn og kan enten defineres under nedtrekksmenyen i <b>Data type</b> eller som JME code. Det enkleste er kanskje å velge <b>Random number from a range</b>, men da kan vi ikke utelukke verdier. Her er typiske linjer med JME kode som lager randomiserte variabler:</p>
+<p><code>random(-7..7)</code> gir en tilfeldig heltallsverdi i området [-7, 7]. Uttryket -7..7 er en range - et tallområde. <br />
+<code>random(-7..7 except[0])</code> gir heltallsverdier i [-7, 7] , unntatt 0 <br />
+<code>random(-7--7 except[0, a]</code> gir heltallsverdier i [-7, 7], unntatt 0 og den verdien som a har.</p>
 <p>La variablene $a$, $b$ og $c$ få tilfeldige verdier i området [-5, -4, -3, -2, 2, 3, 4, 5] og la variablene få 3 ulike verdier.</p>
-<p>De to svarene kan passende hentes inn i en gap-fill spørsmålstype med Gap0 og Gap1 av passende input type. Velg også Add a step av Type Information only der du taster inn tips til løsning av oppgaven.</p>
-<p>Under fanen Advice taster du inn et svarforslag til opgaven. Her kan du bruke de randomiserte variablene til trinnene i løsningen.</p>
+<p>Svaret kan passende hentes inn i en gap-fill spørsmålstype av passende input type.</p>
 <p>Sett passe restriksjoner på tegn og eventuelt lengde i svaret for å hindre at studenten svarer med den utvidede brøken.</p>
-<p>kan sette det som restriksjon.</p>
 <p>Hvis du vil se min utgave av denne oppgaven må du søke den opp i oppgavedatabasen - men det kan du vel vente med til du har strevd litt mer.</p></div>
             
         </div>
