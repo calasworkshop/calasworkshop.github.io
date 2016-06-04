@@ -174,14 +174,21 @@
     
         <li class="main active"><a href="#oppgavetyper">Oppgavetyper</a></li>
         
-            <li><a href="#mathematical-expression">Mathematical expression</a></li>
+    
+        <li class="main "><a href="#et-typisk-sprsmal">Et typisk spørsmål</a></li>
+        
+    
+        <li class="main "><a href="#mathematical-expression">Mathematical expression</a></li>
+        
+    
+        <li class="main "><a href="#the-structure-of-a-question">The structure of a question</a></li>
         
     
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="oppgavetyper">Oppgavetyper</h1>
+<h2 id="oppgavetyper">Oppgavetyper</h2>
 <p><sup>Foreløpig</sup></p>
 <p>Numbas tilbyr en rekke oppgavetyper,</p>
 <table>
@@ -236,47 +243,19 @@
 <li>Number entry</li>
 <li>Matrix entry</li>
 </ul>
+<h2 id="et-typisk-sprsmal">Et typisk spørsmål</h2>
+<p>Et spørsmål består normalt av en innlednig, <strong>Statement</strong>, som kan introdusere oppgaven. Deretter følger spørsmålet i <strong>Parts</strong> som kan være inndelt i delspørsmål, <strong>Part a)</strong>, <strong>Part b)</strong>,. Svarene tastes inn i <strong>Gaps</strong> som settes inn i oppgaveteksten.</p>
+<p><img alt="Question overview" src="../../img/question_overview.png" /></p>
+<p>De tre <strong>Parts</strong> i spørsmålet ovenfor er av av typen <strong>Gap-fill</strong>, der det første <strong>Gap</strong> er satt til å hente inn svar som <strong>Mathematical expression</strong>. De to siste Gaps henter inn svar som <strong>Number entry</strong>. I hvert delspørsmål kan det settes inn et <strong>Step</strong> som brukes til å gi hint om hvordan oppgaven kan løses.</p>
 <h2 id="mathematical-expression">Mathematical expression</h2>
+<h2 id="the-structure-of-a-question">The structure of a question</h2>
+<iframe src="https://player.vimeo.com/video/167127611" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 <p>Brukes til spørsmål som har algebraiske uttrykk som svar. Svarene tastes inn på enlinje form.</p>
 <p>Svarene evalueres ved å sette inn tilfeldige verdier i et område for variablene i svaruttrykket og i fasituttrykket og hvis uttrykkene beregnes som like blir svaret evaluert som riktig.</p>
 <p>Dette betyr at en student i prinsippet kan svare med uttrykket i spørsmålet hvis det dreier seg om forenkliger og omforminger. Før svaret evalueres blir overflødige parenteser og andre tegn fjernet. Ved siden av evaluering kan det settes krav til at svaret har lengde innenfor et gitt område eller at det inneholder eller ikke inneholder visse bokstavtegn. </p>
 <p>Det kan være problematisk å finne restriksjoner som garanterer at svaret er forenklet mest mulig. Det arbeides med en forbedring av dette.</p>
-<p>Karaktersetting</p>
-<p>Correct answer
-The expected answer to the part. Question variables (or, more broadly, JME expressions which should be evaluated to a single value when the question is generated), can be included by enclosing them in curly braces.
-Show preview of student’s answer?
-If ticked, a rendering of the student’s answer in mathematical notation is displayed beeside the input box. You should leave this on unless you expect the answer to be veery simple and need the space - the feedback about how their answer is interpreted is very useful to students.
-Answer simplification rules
-Simplification rules to apply to the correct answer, if it is displayed to the student (for example, after clicking the Reveal answers button). This shouldn’t affect marking.
-Accuracy and string restrictions</p>
-<p>Checking type
-The rule to use to compare the student’s answer with the correct answer. In the lines below, xx represents the value of the student’s answer at a particular point and yy represents the value of the correct answer, while δδ is the value of the checking accuracy property.</p>
-<p>Absolute difference. Fail if |x−y|&gt;δ|x−y|&gt;δ.
-Relative difference. Fail if ∣∣xy−1∣∣&gt;δ|xy−1|&gt;δ.
-Decimal points. xx and yy are rounded to δδ decimal places, and the test fails if the rounded values are unequal.
-Significant figures. xx and yy are rounded to δδ significant figures, and the test fails if the rounded values are unequal.
-Checking accuracy
-The parameter for the checking type.
-Points to check
-The number of comparisons to make between the student’s answer and the correct answer.
-Maximum no. of failures
-If the comparison fails this many times or more, the student’s answer is marked as wrong.
-Checking range start
-The minimum value sample points can take.
-Checking range end
-The maximum value sample points can take.
-Maximum length restriction
-If the student’s answer contains more than this many characters, the penalty is applied. A value of zero means no restriction is applied. The student’s answer is tidied up slightly so that things like extra or missing space characters don’t affect the calculated length. All spaces are removed, and then spaces are inserted between binary operations. For example, the answer 1+x (three characters) is marked as 1 + x (five characters).
-Minimum length restriction
-If the student’s answer contains fewer than this many characters, the penalty is applied. A value of zero means no restriction is applied. See the comment above on how the length is calculated.
-Required strings
-If the student’s answer doesn’t contain all of these strings, the penalty is applied.
-Forbidden strings
-If the student’s answer contains any of these strings, the penalty is applied.
-Warn if student uses an unexpected variable name?
-If this is ticked, all variable names used in the student’s are checked against the list you provide. The first variable name which is not in the list will trigger a warning. You can use this option to prevent students incorrectly entering answers such as xy, which is interpreted as a single variable, when they mean x*y, the product of two variables.
-Expected variable names
-Variable names in this list will not prompt the “unexpected variable name” warning when the student uses them.</p></div>
+<p>Karaktersetting</p></div>
             
         </div>
 
