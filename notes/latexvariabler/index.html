@@ -129,13 +129,13 @@
                         
                             
 <li >
-    <a href="../flatmath/">Lineær syntaks, JME</a>
+    <a href="../flatmath/">Lineær syntaks</a>
 </li>
 
                         
                             
 <li >
-    <a href="../variabler/">Variabler</a>
+    <a href="../variablerJME/">Variabler, JME</a>
 </li>
 
                         
@@ -180,8 +180,42 @@
                 <div class="col-md-9" role="main">
 
 <h3 id="latexvariabler">Latexvariabler</h3>
-<p><span style="background-color:#faa;">IKKE FERDIG</span></p>
-<p><em>Notater kommer</em></p></div>
+<p><sup>Foreløpig</sup></p>
+<p>Dette notatet er basert på Numbas dokumentasjon <br />
+<a href="http://numbas-editor.readthedocs.io/en/latest/tutorials/write-question.html">Writing your first question</a> <br />
+<a href="https://numbas.mathcentre.ac.uk/question/670/numbas-tutorial-arithmetic/">Numbas tutorial: arithmetic</a></p>
+<p>LaTeX brukes til å lage pene matematiske uttrykk med en form for koding. I Numbas er LaTeX utvidet til å kjenne igjen variabler som vi lager til oppgaver slik at de blir vist med de aktuelle verdiene som variablene har.</p>
+<p>Eksempel: <br />
+Vi har de randomiserte variablene <code>a=random(-5..5 except 0)</code>og <code>b=random(-5..5 except[0, a])</code> og lager et spørsmål om å faktorisere et polynom med nullpunkter -a og -b. Videre tenke vi oss at for øyeblikket har variablene verdiene a=-1 og b=2.</p>
+<p>Det er 2 måter å sette inn variabelverdier i LaTeX kode, enten med kodebiten <code>\var{<i>variabelnavn</i>}</code> eller som et sammensatt regneuttrykk som forenkles etter visse regler, <code>\simplify{<i>regneuttrykk med variabler</i>}</code>.</p>
+<p>Her er en demonstrasjon av LaTeX med variabler:</p>
+<table>
+<thead>
+<tr>
+<th>LaTeX kode</th>
+<th>LaTeX</th>
+<th>Kommentar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Faktoriser $x^2 - x - 2$</code></td>
+<td>Faktoriser $x^2 - x - 2$</td>
+<td>Uten variabler, konstante verdier</td>
+</tr>
+<tr>
+<td><code>Faktoriser $x^2 + \var{a+b}x + \var{a*b}$</code></td>
+<td>Faktoriser $x^2 + 1x + -2$</td>
+<td>Direkte substitusjon av verdier</td>
+</tr>
+<tr>
+<td><code>Faktoriser $\simplify{x^2 + {a+b}*x + {a*b}}$</code></td>
+<td>Faktoriser $x^2 - x - 2$</td>
+<td>Med variabler og funksjonen \simplify{}</td>
+</tr>
+</tbody>
+</table>
+<p>Begge metodene kan være nyttige, metoden med \var{} kan brukes når vi lager svarforslag som viser detaljerte mellomregninger, metoden med \simplify{} trekker sammen til pene uttrykk, justerer fortegn og viser ikke faktoren 1. I <a href="http://numbas-editor.readthedocs.io/en/latest/simplification.html#simplification-rules">Simplification rules</a> finner du detaljer om \simplify{}.</p></div>
             
         </div>
 

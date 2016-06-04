@@ -9,7 +9,7 @@
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
 
-	<title>Numbas - kort fortalt - calasWorkshop</title>
+	<title>Variabler, JME - calasWorkshop</title>
 
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
@@ -110,8 +110,8 @@
                         <ul class="dropdown-menu">
                         
                             
-<li class="active">
-    <a href="./">Numbas - kort fortalt</a>
+<li >
+    <a href="../inshort/">Numbas - kort fortalt</a>
 </li>
 
                         
@@ -134,8 +134,8 @@
 
                         
                             
-<li >
-    <a href="../variablerJME/">Variabler, JME</a>
+<li class="active">
+    <a href="./">Variabler, JME</a>
 </li>
 
                         
@@ -172,44 +172,78 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#numbas-kort-fortalt">Numbas kort fortalt</a></li>
+        <li class="main active"><a href="#variabler">Variabler</a></li>
         
-            <li><a href="#questions-and-exams">Questions and Exams</a></li>
+    
+        <li class="main "><a href="#jme">JME</a></li>
         
-            <li><a href="#to-typer-tester">To typer tester</a></li>
-        
-            <li><a href="#alt-foregar-hos-studenten">Alt foregår hos studenten</a></li>
-        
-            <li><a href="#numbas-editor">Numbas Editor</a></li>
-        
-            <li><a href="#oppgavedatabase">Oppgavedatabase</a></li>
-        
-            <li><a href="#latex-og-enlinje-syntaks">LaTeX og enlinje syntaks</a></li>
+    
+        <li class="main "><a href="#fasitsvar-med-variabler">Fasitsvar med variabler</a></li>
         
     
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h2 id="numbas-kort-fortalt">Numbas kort fortalt</h2>
+<h3 id="variabler">Variabler</h3>
 <p><sup>Foreløpig</sup></p>
-<p>Numbas er et nettbasert system som lager digitale tester for matematikk og andre fag. Testene lages i en editor server som er åpen for alle. Numbas er også et lagersted for tester som andre har laget og som du kan kopiere og arbeide videre med.</p>
-<h3 id="questions-and-exams">Questions and Exams</h3>
-<p>Numbas Editor lager enkeltoppgaver (questions) som så kan samles sammen til en test (exam). I en exam kan det settes opp om studentene kan gjøre flere forsøk, hoppe mellom spørsmål, tidsrammer, se tips underveis, løsningsforslag og andre parametre. En exam kan altså brukes til egentrening og selvstudium - eller til en avsluttende eksamen.</p>
-<p>Oppgavetypene i Numbas er tallsvar, tekstsvar, flervalg, paring, algebraiske uttrykk, matriser - alle med mulighet for randomiserte tall og uttrykk. Det kan også settes inn figurer og videoer.</p>
-<h3 id="to-typer-tester">To typer tester</h3>
-<p>Noen LMS'er kan importere tester som er pakket inn i SCORM eller LTI format og kjøre disse som om de tilhører LMS'et. Dermed kan studentenes svar og resultater bli lagret i LMS'ets eget statusregnskap. Numbas kan lage slike utgaver av testene for SCORM format, og LTI format er under utvikling. Ikke alle LMS'er følger standardene fullt ut.</p>
-<p>Når du lager oppgaver i Numbas og setter disse sammen til en test kan du altså velge å laste den ned som SCORM/LTI pakke eller som en Standalone (nettside) utgave. Du kan også laste ned selve kildekoden til testene som en Source - og dermed ta egne kopier av testene.</p>
-<h3 id="alt-foregar-hos-studenten">Alt foregår hos studenten</h3>
-<p>Det som skiller Numbas fra andre systemer er at testene lages som enkle nettsider (html-dokumenter) som hentes fra filservere via en link, fra LMS'er eller minnepinner. I en slik nettside ligger både oppgaveteksten og et et system som lager tilbakemelding om resultatet. En Numbas test er altså ikke avhengig av at et LMS porsjonerer ut oppgaver til studentene og holder rede på resultater.</p>
-<p>Dette gjør Numbas til et lettvekt system i forhold til andre som er avhengig av kommunikasjon med en server som viser spørsmål og prosesserer svar. </p>
-<h3 id="numbas-editor">Numbas Editor</h3>
-<p>Numbas utvikles ved Newcastle University. De tilbyr alle å bruke deres editor server til å lage oppgaver. Siden Numbas er et system med åpen kildekode er det også mulig å sette opp egne editor servere og lage oppgaver der. Det kan være aktuelt ved uttesting av systemet - eller til utvikling av egne løsninger.</p>
-<p>Fordelen med å bruke Numbas Editor ved Newcastle University er tilgangen til andres oppgaver. Ved redigering av oppgaver vil vi også forhåndsvise testene fra denne serveren. Når vi så skal la studentene bruke testene må vi altså først laste ned disse i SCORM eller Standalone format og legge de ut i LMS eller andre filservere (Dropbox?).</p>
-<h3 id="oppgavedatabase">Oppgavedatabase</h3>
-<p>De fritt tilgjengelige oppgavene i Numbas Editor ved Newcastle University er lagret med titler eller keywords som er ment å beskrive innholdet. Vi kan søke etter oppgaver basert på disse beskrivelsene. Det mangler et system som indekserer oppgavene etter vanlige kriterier. Når versjon 2 av Numbas Editor er klar vil dette bli forbedret. Der kan det også lages prosjektgrupper slik at de enkelte institusjonene kan holde orden på egne oppgaver. Det er også mulig å dele ut oppgaver til den åpne databasen.</p>
-<h3 id="latex-og-enlinje-syntaks">LaTeX og enlinje syntaks</h3>
-<p>Oppgavene lages i en enkel tekstbasert editor som kan gjøre enkle formateringer av teksten. Matematiske uttrykk i oppgaveteksten tastes inn som LaTeX kode som automatisk blir tolket og vist som formeluttrykk. Studentene svarer med enlinje syntax - som i de aller fleste matteapper, CAS-kalkulatorer og regneark. Svarene blir tolket fortløpende og vist som LaTeX uttrykk - eller med meldinger som hjelper til riktig inntasting. Svarene aksepteres ikke før de er matematisk korrekte.</p></div>
+<p>Numbas kan lage oppgaver med datatyper som tall, tallområder, stringer, lister, vektorer, mengder og matriser. En variabel er en navngitt verdi på en av disse datatypene. I stedet for å bruke konkrete tall direkte kan vi for et rektangel lage variablene <code>bredde = 3</code> og <code>hoyde = 4</code> og beregne arealet som <code>areal = bredde * hoyde</code>. En variabel er altså en dataverdi som vi kan referere til med variabelnavnet.</p>
+<p>En randomisert variabel er et tilfeldig tall hentet fra et tallområde eller en liste. Randomiserte verdier som brukes å lage utgaver med tilfeldige tallsett i et spørsmål. Det gir muligheter til å øve inn metode i oppgaveløsning eller til å gi individueller oppgaver i en testsituasjon.</p>
+<p>Eksempel: <br />
+For en student ser spørsmålet slik ut: $\text{Faktoriser}x^2 - 2 x - 3$ : <span style="border-style:solid; border-width:1px;border-color:#888">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p>Spørsmålet av typen <strong>Mathematical expression</strong> er kanskje laget slik: <code>Faktoriser $\simplify{x^2 + {a+b}*x + {a*b}}$</code> <br />
+med a og b som randomiserte tall, laget av følgende JME kode: <br />
+<code>a&nbsp;=&nbsp;random(-5..5&nbsp;except&nbsp;0)</code> <br />
+<code>b&nbsp;=&nbsp;random(-5..5,&nbsp;except[0,&nbsp;a])</code></p>
+<p>Riktig svar settes opp i feltet <strong>Marking</strong> som <code>(x+{a})*(x+{b})</code> </p>
+<p>Student Ane kan svare &nbsp;&nbsp;[<code>(x-3)*(x+1)</code>]&nbsp; <small><span style="background-color:#eee;">$(x-3)(x+1)$</span></small> <br />
+student Ben kan svare: &nbsp;&nbsp;[<code>(x+1)*(-3+x)</code>]&nbsp; <small><span style="background-color:#eee;">$(x+1)(-3+x)$</span></small> <br />
+og begge svar blir markert riktig fordi de evalueres numerisk til samme testverdier som fasit.</p>
+<p>Et <a href="http://numbas-editor.readthedocs.io/en/latest/tutorials/write-question.html">lignende eksempel</a> er gjennomgått i Numbas dokumentasjon.</p>
+<h3 id="jme">JME</h3>
+<p>JME er et eget regneapparat i Numbas som kan håndtere tall, tabeller, vektorer, mengder og matriser. Det kjenner også trigonometriske funksjoner, logaritmefunksjoner, funksjoner for tallbehandling, vektoraritmetikk og mange andre. Ved redigering av oppgaver kan vi bruke JME til å lage variabler med randomiserte verdier og gjøre mellomregninger.</p>
+<p>Den fullstendige <a href="http://numbas-editor.readthedocs.io/en/latest/jme-reference.html">dokumentasjonen av JME</a> lister opp alle funksjoner og muligheter, nedenfor er en kort gjennomgang av hvordan vi lager randomiserte tall.</p>
+<p>Når du redigerer en oppgave vil menyvalget <strong>Variables</strong> be deg lage en ny variabel med valget <strong>Add a variable</strong>. Etter det må du gi variabelen <strong>Name</strong> og gi den en <strong>Data type</strong>. Du får valget mellom <br />
+- JME code <br />
+- Number <br />
+- Range of numbers <br />
+- Random number from range <br />
+- Text string <br />
+- List of numbers <br />
+- List of strings</p>
+<p>Datatypen Random number from range er det vi er ute etter i dette kurset. Men, for å demonstrere litt JME syntaks velger jeg å bruke JME code direkte til dette. Ta en titt på oppgaven i eksemplet ovenfor, der ønsker jeg å la nullpunktene a og b få <em>forskjellige</em> verdier i et område fra -7 til 7, og verdien 0 skal være unntatt. Med Random number from range er dette ikke mulig.</p>
+<p>Her er bitene som lager de tilfeldige tallene jeg er ute etter samlet sammen til en JME kode:</p>
+<table>
+<thead>
+<tr>
+<th>JME kode</th>
+<th>Verdieksempel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-7..7</code></td>
+<td>Et tallområde (range) [-7, 7]</td>
+</tr>
+<tr>
+<td><code>-7..7 except 0</code></td>
+<td>Alle tallene i -7..7 med unntak av 0</td>
+</tr>
+<tr>
+<td><code>random(-7..7)</code></td>
+<td>Et tilfeldig tall i -7..7</td>
+</tr>
+<tr>
+<td><code>random(-7..7 except [0, a])</code></td>
+<td>Et tilfeldig tall i -7..7 med unntak av 0 og verdien som variabelen a har.</td>
+</tr>
+</tbody>
+</table>
+<p>Dette er alt du trenger å vite om JME kode i dette kurset. Bruk klipp/lim og sett inn i feltet for JME kode når du lager tilfeldige tall. Klikk gjerne noen ganger på <strong>Regenerate</strong> values for å sjekke at du får verdier slik du har tenkt deg.</p>
+<h3 id="fasitsvar-med-variabler">Fasitsvar med variabler</h3>
+<p>Oppgaven i eksemplet ovenfor forventer svar som (x+1)*(x-3) hvis a=-1 og b=3. Ved inntasting av riktig svar under <strong>Marking</strong>  henter JME de aktuelle verdiene til a og b ved å sette de inn mellom {}-parenteser. Riktig svar settes altså til <code>(x+{a})*(x+{b})</code>.</p>
+<p>Men, fordi Numbas tester om et svar er riktig ved å beregne uttrykkene ved å sette inn noen tall i både studentens svar og fasitsvaret - og sammenlikne om de evaluerer likt - så kan vi i dette tilfellet også sette at <code>x^2 + {a+b}*x+{a*b}</code> også er riktig svar. Hvis vi skal forsikre oss om at studenten har faktorisert kan vi for eksempel sette at tegnene '()()' må være med i svaret.</p>
+<p>Legg merke til at JME evaluerer {a} til verdien som a har i øyeblikket, og sammensatte uttrykk som {a+b} og {a*b} blir utregnet med de aktuelle verdiene som a og b har.</p></div>
             
         </div>
 
