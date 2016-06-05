@@ -9,7 +9,7 @@
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
 
-	<title>Numbas oppgavetyper - calasWorkshop</title>
+	<title>Prosjekter - calasWorkshop</title>
 
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
@@ -116,8 +116,8 @@
 
                         
                             
-<li class="active">
-    <a href="./">Numbas oppgavetyper</a>
+<li >
+    <a href="../numbasquestions/">Numbas oppgavetyper</a>
 </li>
 
                         
@@ -146,8 +146,8 @@
 
                         
                             
-<li >
-    <a href="../projects/">Prosjekter</a>
+<li class="active">
+    <a href="./">Prosjekter</a>
 </li>
 
                         
@@ -178,89 +178,103 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#oppgavetyper">Oppgavetyper</a></li>
+        <li class="main active"><a href="#prosjekter">Prosjekter</a></li>
         
     
-        <li class="main "><a href="#et-typisk-sprsmal">Et typisk spørsmål</a></li>
+        <li class="main "><a href="#nytt-prosjekt">Nytt prosjekt</a></li>
         
     
-        <li class="main "><a href="#mathematical-expression">Mathematical expression</a></li>
+        <li class="main "><a href="#legge-til-samarbeidspartnere">Legge til samarbeidspartnere</a></li>
         
     
-        <li class="main "><a href="#the-structure-of-a-question">The structure of a question</a></li>
+        <li class="main "><a href="#samarbeid">Samarbeid</a></li>
         
     
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h3 id="oppgavetyper">Oppgavetyper</h3>
+<h3 id="prosjekter">Prosjekter</h3>
 <p><sup>Foreløpig</sup></p>
-<p>Numbas tilbyr en rekke oppgavetyper,</p>
-<table>
-<thead>
-<tr>
-<th>Type</th>
-<th>Brukes til</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Information only</td>
-<td>Brukes til opplysninger, henter ikke inn svar.</td>
-</tr>
-<tr>
-<td>Gap-fill</td>
-<td>Spørsmål med en eller flere felter for inntasting av svar.</td>
-</tr>
-<tr>
-<td>Mathematical expression</td>
-<td>Algebraiske svar, inntasting tolkes fortløpende.</td>
-</tr>
-<tr>
-<td>Number entry</td>
-<td>Henter tallsvar innenfor et område eller med gitt presisjon</td>
-</tr>
-<tr>
-<td>Matrix entry</td>
-<td>Henter tallsvar for hver celle i matrisen.</td>
-</tr>
-<tr>
-<td>Match text pattern</td>
-<td>Tekstsvar som må oppfylle et gitt tekstmønster.</td>
-</tr>
-<tr>
-<td>Choose one from a list</td>
-<td>Velg ett alternativ fra en liste med alternativer.</td>
-</tr>
-<tr>
-<td>Choose several from a list</td>
-<td>Velg ett eller flere alternativer fra en liste. Kan angi min/max antall.</td>
-</tr>
-<tr>
-<td>Match choices with answers</td>
-<td>2D tabell,velg ett eller flere alternativer som hører sammen.</td>
-</tr>
-</tbody>
-</table>
-<p>Av de mange oppgavetypene i Numbas vil vi i dette kurset konsentrere oss om </p>
+<p>Prosjekter er samlinger av spørsmål og eksamener som hører til et fag eller kurs. Hver bruker kan opprette prosjekter og invitere andre brukere til å samarbeide om innholdet.</p>
+<p>Alle nye brukere får automatisk sitt eget prosjekt <strong>My workspace</strong> som bør brukes til oppgaver som er under utvikling. Ferdige arbeider flyttes til prosjekter som gis beskrivende navn i forhold til innholdet. Bruk også kommentarfeltet til å lage noen stikkord om innholdet.</p>
+<p>Alle spørsmål og eksmener må tilhøre et prosjekt. Når du lager et nytt spørsmål må du legge det inn i et prosjekt. Du kan lage kopi av et spørsmål og legge det i et annet prosjekt, men endringer du gjør i kopien vil ikke reflekteres tilbake til originalen.</p>
+<h3 id="nytt-prosjekt">Nytt prosjekt</h3>
+<p>På startskjermen i Numbas vil du etter innlogging se <strong>+ New</strong> øverst i vinduet. Så får du muligheten til å velge <strong>Project</strong> og du kan fylle ut</p>
 <ul>
-<li>Mathematical expression</li>
-<li>Number entry</li>
+<li><strong>Name</strong>, gjerne et navn som beskriver innholdet.</li>
+<li><strong>Description</strong>, formålet med prosjektet.</li>
+<li><strong>Default language</strong>, gir menytekster i valgt språk.</li>
+<li><strong>Default licence</strong>, standardvalg for spørsmål og eksamen i prosjektet.</li>
 </ul>
-<h3 id="et-typisk-sprsmal">Et typisk spørsmål</h3>
-<p>Et spørsmål består normalt av en innlednig i <strong>Statement</strong> som kan introdusere oppgaven. Deretter følger spørsmålet i <strong>Parts</strong> som kan være inndelt i delspørsmål, <strong>Part a)</strong>, <strong>Part b)</strong>,. Spørsmålsteksten tastes inn som <strong>Prompt</strong>. Svarene tastes inn i <strong>Gaps</strong> som settes inn i oppgaveteksten.</p>
-<p><img alt="Question overview" src="../../img/question_overview.png" /></p>
-<p>De tre <strong>Parts</strong> i spørsmålet ovenfor er av av typen <strong>Gap-fill</strong>, der det første <strong>Gap</strong> er satt til å hente inn svar som <strong>Mathematical expression</strong>. De to siste Gaps henter inn svar som <strong>Number entry</strong>. I hvert delspørsmål kan det settes inn et <strong>Step</strong> som brukes til å gi hint om hvordan oppgaven kan løses.</p>
-<h3 id="mathematical-expression">Mathematical expression</h3>
-<h3 id="the-structure-of-a-question">The structure of a question</h3>
-<iframe src="https://player.vimeo.com/video/167127611" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p>Disse innstillingene kan endres i <strong>Projects settings</strong> ved å klikke på tannhjulikonet til høyre i tittelfeltet. Der kan du også slette prosjektet.</p>
+<h3 id="legge-til-samarbeidspartnere">Legge til samarbeidspartnere</h3>
+<p>Klikk på tannhjulikonet i menyen <strong>Members</strong> og videre <strong>Add a member</strong>. I et søkefelt kan du finne registrerte brukere i Numbas, eller du kan taste inn emailadressen til de du vil inviterer som prosjektmedlemmer. Her velger du også mellom status <strong>Can view</strong> eller <strong>Can edit</strong> for de du legger til. Du kan også fjerne medlemmer eller overdra prosjektledelsen til en annen person.</p>
+<h3 id="samarbeid">Samarbeid</h3>
+<p>I åpningssiden for et prosjekt gis en kronologisk oversikt over <strong>Project activity</strong> som oppdateres hver gang det skjer en endring. Her er det også mulig å kommunisere med andre medlemmer med <strong>Write a comment</strong>.</p>
+<p>I menyvalget <strong>Editing history</strong> for hvert enkelt spørsmål kan prosjektmedlemmer bruke <strong>Write a comment</strong> til diskusjonsinnlegg. Det kan også lagres kommenterte snapshots av spørsmålene du redigerer slik at du kan rulle tilbake til tidligere versjoner.</p>
+<!--
 
-<p>Brukes til spørsmål som har algebraiske uttrykk som svar. Svarene tastes inn på enlinje form.</p>
-<p>Svarene evalueres ved å sette inn tilfeldige verdier i et område for variablene i svaruttrykket og i fasituttrykket og hvis uttrykkene beregnes som like blir svaret evaluert som riktig.</p>
-<p>Dette betyr at en student i prinsippet kan svare med uttrykket i spørsmålet hvis det dreier seg om forenkliger og omforminger. Før svaret evalueres blir overflødige parenteser og andre tegn fjernet. Ved siden av evaluering kan det settes krav til at svaret har lengde innenfor et gitt område eller at det inneholder eller ikke inneholder visse bokstavtegn. </p>
-<p>Det kan være problematisk å finne restriksjoner som garanterer at svaret er forenklet mest mulig. Det arbeides med en forbedring av dette.</p>
-<p>Karaktersetting</p></div>
+Collaborating using Numbas
+Numbas has several features to make collaborating with colleagues easier.
+
+Note
+
+# New bits
+Project
+Don’t collaborate in your own workspace - create a separate project instead.
+
+Projects grant automatic editing access to their members.
+
+Timeline
+Use the project timeline, and the editing history tab on individual items, to keep track of changes you and your colleagues make. Write comments to discuss changes or problems.
+
+Restore points
+Set a restore point to save a snapshot of your question when you make a change.
+
+Write an informative description of the current state of the question, and what you’ve changed since the last restore point.
+
+Give feedback
+Use the feedback stamps to tell your colleagues which of your questions are ready to use, and which need more attention.
+
+Check over your colleagues’ work and use feedback stamps to alert them to problems.
+
+When you compile an exam, every question in it should be labelled “Ready to use”.
+
+Pull requests
+If you see a problem in someone else’s question but don’t have editing access, make a copy and fix it, but don’t just leave the original to languish - create a pull request so your changes can be merged back into the original.
+
+Note
+
+# end of new bits
+Give editing access to collaborators../_images/access_rights.png
+Use the Access tab to give editing or viewing access for your questions and exams to your colleagues.
+
+Use the editing history tab../_images/sample_editing_history.png
+Each time you make a change to a question, write a description of what you’ve done in the Editing history tab. This is useful when you’re editing your own questions, but doubly so when editing other people’s - they can quickly see what’s different, and decide if they’re happy with the changes.
+
+You can write comments on the editing history. Use this to suggest changes, report bugs, and so on.
+
+Give feedback on quality../_images/feedback_dropdown.png
+Use the Feedback button on questions and exams to let other users know whether they’re ready for use or not.
+
+It’s a good idea to have someone else test a question once it’s complete; they should proofread the text and then attempt the question, giving both correct and incorrect answers to check that the marking works as intended.
+
+If a colleague makes a copy of a question and you decide to use that instead, mark the original version as “Should not be used” to avoid confusion later on.
+
+Add descriptions to variables and use sensible names../_images/variable_description.png
+Short variable names are quick to type, but not easy to understand. Try to avoid single-letter variable names as much as possible, and prefer longer names over shorter ones. For example, it isn’t immediately obvious what sm represents, while sample_mean is very clear.
+
+In addition, make sure to write a description of each variable in the box under its definition. You should explain what the variable represents, and also describe any important points about how the variable is generated, or what values it can take.
+
+Tag questions
+Use tags to categorise your questions. Agree with your colleagues how to tag questions - if everyone makes up their own tags, they’re no use at all!
+
+Here are some tagging schemes you might want to use:
+
+By topic - tag a question with the part of the curriculum it covers, separately from the name of the particular course you’re making it for, so colleagues teaching other courses can find it.
+By level - use a tag to tell other authors which age range or ability level your question is suitable for.
+--></div>
             
         </div>
 
