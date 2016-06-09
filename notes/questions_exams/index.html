@@ -5,11 +5,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        
-        
+        <meta name="author" content="Tore Gaupseth">
+        <link rel="canonical" href="http://calasworkshop.github.io/notes/questions_exams/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
 
-	<title>Variabler, JME - calasWorkshop</title>
+	<title>Oppgaver og eksamen - calasWorkshop</title>
 
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
@@ -116,8 +116,8 @@
 
                         
                             
-<li >
-    <a href="../numbasquestions/">Numbas oppgavetyper</a>
+<li class="active">
+    <a href="./">Oppgaver og eksamen</a>
 </li>
 
                         
@@ -134,14 +134,8 @@
 
                         
                             
-<li class="active">
-    <a href="./">Variabler, JME</a>
-</li>
-
-                        
-                            
 <li >
-    <a href="../latexvariabler/">Variabler i LaTeX</a>
+    <a href="../variablesJME/">Variabler, JME</a>
 </li>
 
                         
@@ -155,8 +149,8 @@
                     </li>
                 
                 
-                <li><a href="https://numbas.mathcentre.ac.uk/">Numbas editor</a>
-                <li><a href="http://numbas-editor.readthedocs.io/en/latest/#">Numbas documentation</a>
+                <li><a target="_blank" href="https://numbas.mathcentre.ac.uk/">Numbas Editor</a></li>
+                <li><a target="_blank" href="http://numbas-editor.readthedocs.io/en/latest/index.html">Numbas Documentation</a></li>                
                 </ul>
             
 
@@ -178,89 +172,115 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#variabler">Variabler</a></li>
+        <li class="main active"><a href="#oppgaver">Oppgaver</a></li>
+        
+            <li><a href="#oppgavetyper">Oppgavetyper</a></li>
+        
+            <li><a href="#et-typisk-sprsmal">Et typisk spørsmål</a></li>
+        
+            <li><a href="#mathematical-expression">Mathematical expression</a></li>
+        
+            <li><a href="#number-entry">Number entry</a></li>
+        
+            <li><a href="#the-structure-of-a-question">The structure of a question</a></li>
         
     
-        <li class="main "><a href="#jme">JME</a></li>
+        <li class="main "><a href="#eksamen">Eksamen</a></li>
         
     
-        <li class="main "><a href="#fasitsvar-med-variabler">Fasitsvar med variabler</a></li>
+        <li class="main "><a href="#standalone-eller-scorm">Standalone eller SCORM</a></li>
         
     
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h3 id="variabler">Variabler</h3>
+<h2 id="oppgaver">Oppgaver</h2>
+<h3 id="oppgavetyper">Oppgavetyper</h3>
 <p><sup>Foreløpig</sup></p>
-<p>Numbas kan lage oppgaver med datatyper som tall, tallområder, stringer, lister, vektorer, mengder og matriser. En variabel er en navngitt verdi på en av disse datatypene. I stedet for å bruke konkrete tall direkte kan vi for et rektangel lage variablene <code>bredde = 3</code> og <code>hoyde = 4</code> og beregne arealet som <code>areal = bredde * hoyde</code>. En variabel er altså en dataverdi som vi kan referere til med variabelnavnet.</p>
-<p>En randomisert variabel er et tilfeldig tall hentet fra et tallområde eller en liste. Randomiserte verdier som brukes å lage utgaver med tilfeldige tallsett i et spørsmål. Det gir muligheter til å øve inn metode i oppgaveløsning eller til å gi individueller oppgaver i en testsituasjon.</p>
-<p>Eksempel: <br />
-For en student ser spørsmålet slik ut: $\text{Faktoriser}\;\;x^2 - 2 x - 3$ : <span style="border-style:solid; border-width:1px;border-color:#888">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
-<p>Spørsmålet av typen <strong>Mathematical expression</strong> er kanskje laget slik: <code>Faktoriser $\simplify{x^2 + {a+b}*x + {a*b}}$</code> <br />
-med a og b som randomiserte tall, laget av følgende JME kode: <br />
-<code>a&nbsp;=&nbsp;random(-5..5&nbsp;except&nbsp;0)</code> <br />
-<code>b&nbsp;=&nbsp;random(-5..5,&nbsp;except[0,&nbsp;a])</code></p>
-<p>Riktig svar settes opp i feltet <strong>Marking</strong> som <code>(x+{a})*(x+{b})</code> </p>
-<p>Student Ane kan svare &nbsp;&nbsp;[<code>(x-3)*(x+1)</code>]&nbsp; <small><span style="background-color:#eee;">$(x-3)(x+1)$</span></small> <br />
-student Ben kan svare: &nbsp;&nbsp;[<code>(x+1)*(-3+x)</code>]&nbsp; <small><span style="background-color:#eee;">$(x+1)(-3+x)$</span></small> <br />
-og begge svar blir markert riktig fordi de evalueres numerisk til samme testverdier som fasit.</p>
-<p>Et <a href="http://numbas-editor.readthedocs.io/en/latest/tutorials/write-question.html">lignende eksempel</a> er gjennomgått i Numbas dokumentasjon.</p>
-<h2>More complicated mathematical expressions<a class="headerlink" href="#more-complicated-mathematical-expressions" title="Permalink to this headline">¶</a></h2>
-
-<iframe src="https://player.vimeo.com/video/167137075" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-<h3 id="jme">JME</h3>
-<p>JME er et eget regneapparat i Numbas som kan håndtere tall, tabeller, vektorer, mengder og matriser. Det kjenner også trigonometriske funksjoner, logaritmefunksjoner, funksjoner for tallbehandling, vektoraritmetikk og mange andre. Ved redigering av oppgaver kan vi bruke JME til å lage variabler med randomiserte verdier og gjøre mellomregninger.</p>
-<p>Den fullstendige <a href="http://numbas-editor.readthedocs.io/en/latest/jme-reference.html">dokumentasjonen av JME</a> lister opp alle funksjoner og muligheter, nedenfor er en kort gjennomgang av hvordan vi lager randomiserte tall.</p>
-<p>Når du redigerer en oppgave vil menyvalget <strong>Variables</strong> be deg lage en ny variabel med valget <strong>Add a variable</strong>. Etter det må du gi variabelen <strong>Name</strong> og gi den en <strong>Data type</strong>. Du får valget mellom <br />
-- JME code <br />
-- Number <br />
-- Range of numbers <br />
-- Random number from range <br />
-- Text string <br />
-- List of numbers <br />
-- List of strings</p>
-<p>Datatypen Random number from range er det vi er ute etter i dette kurset. Men, for å demonstrere litt JME syntaks velger jeg å bruke JME code direkte til dette. Ta en titt på oppgaven i eksemplet ovenfor, der ønsker jeg å la nullpunktene a og b få <em>forskjellige</em> verdier i et område fra -7 til 7, og verdien 0 skal være unntatt. Med Random number from range er dette ikke mulig.</p>
-<p>Her er bitene som lager de tilfeldige tallene jeg er ute etter samlet sammen til en JME kode:</p>
+<p>Numbas tilbyr en rekke oppgavetyper,</p>
 <table>
 <thead>
 <tr>
-<th>JME kode</th>
-<th>Verdieksempel</th>
+<th>Type</th>
+<th>Brukes til</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>-7..7</code></td>
-<td>Et tallområde (range) [-7, 7]</td>
+<td>Information only</td>
+<td>Brukes til opplysninger, henter ikke inn svar.</td>
 </tr>
 <tr>
-<td><code>-7..7 except 0</code></td>
-<td>Alle tallene i -7..7 med unntak av 0</td>
+<td>Gap-fill</td>
+<td>Spørsmål med en eller flere felter for inntasting av svar.</td>
 </tr>
 <tr>
-<td><code>random(-7..7)</code></td>
-<td>Et tilfeldig tall i -7..7</td>
+<td>Mathematical expression</td>
+<td>Algebraiske svar, inntasting tolkes fortløpende.</td>
 </tr>
 <tr>
-<td><code>random(-7..7 except [0, a])</code></td>
-<td>Et tilfeldig tall i -7..7 med unntak av 0 og verdien som variabelen a har.</td>
+<td>Number entry</td>
+<td>Henter tallsvar innenfor et område eller med gitt presisjon</td>
+</tr>
+<tr>
+<td>Matrix entry</td>
+<td>Henter tallsvar for hver celle i matrisen.</td>
+</tr>
+<tr>
+<td>Match text pattern</td>
+<td>Tekstsvar som må oppfylle et gitt tekstmønster.</td>
+</tr>
+<tr>
+<td>Choose one from a list</td>
+<td>Velg ett alternativ fra en liste med alternativer.</td>
+</tr>
+<tr>
+<td>Choose several from a list</td>
+<td>Velg ett eller flere alternativer fra en liste. Kan angi min/max antall.</td>
+</tr>
+<tr>
+<td>Match choices with answers</td>
+<td>2D tabell,velg ett eller flere alternativer som hører sammen.</td>
 </tr>
 </tbody>
 </table>
-<p>Dette er alt du trenger å vite om JME kode i dette kurset. Bruk klipp/lim og sett inn i feltet for JME kode når du lager tilfeldige tall. Klikk gjerne noen ganger på <strong>Regenerate</strong> values for å sjekke at du får verdier slik du har tenkt deg.</p>
-<h3 id="fasitsvar-med-variabler">Fasitsvar med variabler</h3>
-<p>Oppgaven i eksemplet ovenfor forventer svar som (x+1)*(x-3) hvis a=-1 og b=3. Ved inntasting av riktig svar under <strong>Marking</strong>  henter JME de aktuelle verdiene til a og b ved å sette de inn mellom {}-parenteser. Riktig svar settes altså til <code>(x+{a})*(x+{b})</code>.</p>
-<p>Men, fordi Numbas tester om et svar er riktig ved å beregne uttrykkene ved å sette inn noen tall i både studentens svar og fasitsvaret - og sammenlikne om de evaluerer likt - så kan vi i dette tilfellet også sette at <code>x^2 + {a+b}*x+{a*b}</code> også er riktig svar. Hvis vi skal forsikre oss om at studenten har faktorisert kan vi for eksempel sette at tegnene '()()' må være med i svaret.</p>
-<p>Legg merke til at JME evaluerer {a} til verdien som a har i øyeblikket, og sammensatte uttrykk som {a+b} og {a*b} blir utregnet med de aktuelle verdiene som a og b har.</p></div>
+<p>Av de mange oppgavetypene i Numbas vil vi i dette kurset konsentrere oss om </p>
+<ul>
+<li>Mathematical expression</li>
+<li>Number entry</li>
+</ul>
+<h3 id="et-typisk-sprsmal">Et typisk spørsmål</h3>
+<p>Et spørsmål består normalt av en innlednig i <strong>Statement</strong> som kan introdusere oppgaven. Deretter følger spørsmålet i <strong>Parts</strong> som kan være inndelt i delspørsmål, <strong>Part a)</strong>, <strong>Part b)</strong>,. Spørsmålsteksten tastes inn som <strong>Prompt</strong>. Svarene tastes inn i <strong>Gaps</strong> som settes inn i oppgaveteksten.</p>
+<p><img alt="Question overview" src="../../img/question_overview.png" /></p>
+<p>De tre <strong>Parts</strong> i spørsmålet ovenfor er av av typen <strong>Gap-fill</strong>, der det første <strong>Gap</strong> er satt til å hente inn svar som <strong>Mathematical expression</strong>. De to siste Gaps henter inn svar som <strong>Number entry</strong>. I hvert delspørsmål kan det settes inn et <strong>Step</strong> som brukes til å gi hint om hvordan oppgaven kan løses.</p>
+<h3 id="mathematical-expression">Mathematical expression</h3>
+<p>Brukes til spørsmål som har algebraiske uttrykk som svar. Svarene tastes inn på enlinje form og JME/LaTeX tolker svaret fortløpende som matematisk uttrykk.</p>
+<p>Svarene evalueres ved å sette inn tilfeldige verdier i et område for variablene i svaruttrykket og i fasituttrykket og hvis uttrykkene beregnes som like blir svaret evaluert som riktig. Det er mulig å spesifisere nøyaktighet, testverdier og antall beregninger som skal sammenfalle.</p>
+<p>Dette betyr at en student i prinsippet kan svare med uttrykket i spørsmålet hvis det dreier seg om forenkliger og omforminger. Før svaret evalueres blir overflødige parenteser og andre tegn fjernet. Ved siden av evaluering kan det settes krav til at svaret har lengde innenfor et gitt område eller at det inneholder eller ikke inneholder visse bokstavtegn. Det kan være problematisk å finne restriksjoner som garanterer at svaret er forenklet mest mulig. Det arbeides med en forbedring av dette.</p>
+<h3 id="number-entry">Number entry</h3>
+<p>Brukes til spørmål med tallsvar. Tall kan enten spesifiseres som heltall eller desimaltall innenfor et gitt tallområde, eller med nøyaktighet satt som antall desimaler etter komma eller med antall gjeldende siffer. Det kan også settes at svar kan tastes inn som heltallsbrøker og at fasitsvar skal vises som brøk.</p>
+<h3 id="the-structure-of-a-question">The structure of a question</h3>
+<iframe src="https://player.vimeo.com/video/167127611" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+<p style="background-color:#eef; padding:3px"><b>Numbas dokumentasjon:</b><br>
+<a href="http://numbas-editor.readthedocs.io/en/latest/question/reference.html">Questions</a><br>
+<a href="http://numbas-editor.readthedocs.io/en/latest/question/cheatsheet/index.html">Cheatsheet</a></p>
+
+<h2 id="eksamen">Eksamen</h2>
+<p>En eksamen settes sammen av oppgaver som er laget og testet. Før du går i gang med å sette sammen en eksamen bør du derfor bla igjennom hvert spørsmål som du vil ha med og legge disse i en <strong>Basket</strong>.</p>
+<p>Start med <strong>Create a new exam</strong> og fyll ut <strong>Name</strong> og <strong>Project</strong> som den skal tilhøre. Lag også en liten <strong>Description</strong>, sett <strong>Tags</strong> og velg passende fag/emne. Åpne så fanen <strong>Questions</strong> og velg <strong>Basket</strong> under Add questions to this exam. Du kan også bla opp de siste spørsmålene du arbeidet med, eller søke etter spørsmål.</p>
+<p>Det opprettes en liste med de spørsmålene du legger til. Der kan du redigere spørsmålene, erstatte spørsmålet med en kopi, eller testkjøre de enkelte spørsmålene. Rekkefølgen kan endres ved å dra spørsmålene opp eller ned i lista, eller du kan velge tilfeldig rekkefølge.</p>
+<p>En eksamen bør testkjøres av deg eller andre før du eventuelt legger den i den åpne databasen. Hvis du i <strong>Settings</strong> har fylt ut <strong>Name</strong> og <strong>Description</strong> og valgt lisens kan du så under fanen <strong>Access</strong> velge <strong>Publish</strong> - og din eksamen er delt med andre.</p>
+<h2 id="standalone-eller-scorm">Standalone eller SCORM</h2>
+<p>Eksamen og enkeltoppgaver i Numbas er komplette nettsider</p></div>
             
         </div>
 
         <footer class="col-md-12">
             <hr>
             
-            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+            <p>Built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
 
         <script src="../../js/jquery-1.10.2.min.js"></script>

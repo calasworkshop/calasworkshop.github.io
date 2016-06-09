@@ -5,8 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        
-        
+        <meta name="author" content="Tore Gaupseth">
+        <link rel="canonical" href="http://calasworkshop.github.io/notes/latex/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
 
 	<title>LaTeX - calasWorkshop</title>
@@ -117,7 +117,7 @@
                         
                             
 <li >
-    <a href="../numbasquestions/">Numbas oppgavetyper</a>
+    <a href="../questions_exams/">Oppgaver og eksamen</a>
 </li>
 
                         
@@ -135,13 +135,7 @@
                         
                             
 <li >
-    <a href="../variablerJME/">Variabler, JME</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../latexvariabler/">Variabler i LaTeX</a>
+    <a href="../variablesJME/">Variabler, JME</a>
 </li>
 
                         
@@ -155,8 +149,8 @@
                     </li>
                 
                 
-                <li><a href="https://numbas.mathcentre.ac.uk/">Numbas editor</a>
-                <li><a href="http://numbas-editor.readthedocs.io/en/latest/#">Numbas documentation</a>
+                <li><a target="_blank" href="https://numbas.mathcentre.ac.uk/">Numbas Editor</a></li>
+                <li><a target="_blank" href="http://numbas-editor.readthedocs.io/en/latest/index.html">Numbas Documentation</a></li>                
                 </ul>
             
 
@@ -291,14 +285,59 @@ LaTeX formler redigeres i klartekst mellom avgrensere <code>$...$</code> eller <
 <!-- http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference -->
 
 <h3 id="latex-i-numbas">LaTeX i Numbas</h3>
-<p>I Numbas spiller JME og LatTeX sammen slik at vi kan sette inn randomiserte variabler i LaTeX kode.<a href="../latexvariabler/">Se eget notat om dette.</a><br></p></div>
+<p>Dette avsnittet forutsetter at du kjenner til variabler i Numbas, se eget notat <a href="../variablesJME/">Variabler</a></p>
+<!--
+
+I Numbas spiller JME og LatTeX sammen slik at vi kan sette inn randomiserte variabler i LaTeX kode.[Se eget notat om dette.](../notes/latexvariabler.md)
+
+-->
+
+<p>I Numbas er LaTeX utvidet til å kjenne igjen variabler som vi lager til oppgaver slik at de blir vist med de aktuelle verdiene som variablene har.</p>
+<p>Eksempel: <br />
+Vi har de randomiserte variablene <code>a=random(-5..5 except 0)</code>og <code>b=random(-5..5 except[0, a])</code> og lager et spørsmål om å faktorisere et polynom med nullpunkter -a og -b. Videre tenke vi oss at for øyeblikket har variablene verdiene a=-1 og b=2.</p>
+<p>Det er 2 måter å sette inn variabelverdier i LaTeX kode, enten med kodebiten <code>\var{<i>variabelnavn</i>}</code> eller som et sammensatt regneuttrykk som forenkles etter visse regler, <code>\simplify{<i>regneuttrykk med variabler</i>}</code>.</p>
+<p>Her er en demonstrasjon av LaTeX med variabler:</p>
+<table>
+<thead>
+<tr>
+<th>LaTeX kode</th>
+<th>LaTeX</th>
+<th>Kommentar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Faktoriser $x^2 - x - 2$</code></td>
+<td>Faktoriser $x^2 - x - 2$</td>
+<td>Uten variabler, konstante verdier</td>
+</tr>
+<tr>
+<td><code>Faktoriser $x^2 + \var{a+b}x + \var{a*b}$</code></td>
+<td>Faktoriser $x^2 + 1x + -2$</td>
+<td>Direkte substitusjon av verdier</td>
+</tr>
+<tr>
+<td><code>Faktoriser $\simplify{x^2 + {a+b}*x + {a*b}}$</code></td>
+<td>Faktoriser $x^2 - x - 2$</td>
+<td>Med variabler og funksjonen \simplify{}</td>
+</tr>
+</tbody>
+</table>
+<p>Begge metodene kan være nyttige, metoden med \var{} kan brukes når vi lager svarforslag som viser detaljerte mellomregninger, metoden med \simplify{} trekker sammen til pene uttrykk, justerer fortegn og viser ikke faktoren 1. I <a href="http://numbas-editor.readthedocs.io/en/latest/simplification.html#simplification-rules">Simplification rules</a> finner du detaljer om \simplify{}.</p>
+<p>Dette notatet er basert på Numbas dokumentasjon <br />
+<a href="http://numbas-editor.readthedocs.io/en/latest/tutorials/write-question.html">Writing your first question</a> <br />
+<a href="https://numbas.mathcentre.ac.uk/question/670/numbas-tutorial-arithmetic/">Numbas tutorial: arithmetic</a></p>
+<p style="background-color:#eef; padding:3px"><b>Numbas dokumentasjon:</b><br>
+<a href="http://numbas-editor.readthedocs.io/en/latest/latex.html">LaTeX documentation</a><br>
+<a href="http://numbas-editor.readthedocs.io/en/latest/simplification.html">Substituting variables into displayed maths</a><br>
+<a href="https://numbas.mathcentre.ac.uk/question/670/numbas-tutorial-arithmetic/">*Replace with question in editor*</p></div>
             
         </div>
 
         <footer class="col-md-12">
             <hr>
             
-            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+            <p>Built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
 
         <script src="../../js/jquery-1.10.2.min.js"></script>

@@ -5,8 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        
-        
+        <meta name="author" content="Tore Gaupseth">
+        <link rel="canonical" href="http://calasworkshop.github.io/notes/projects/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
 
 	<title>Prosjekter - calasWorkshop</title>
@@ -117,7 +117,7 @@
                         
                             
 <li >
-    <a href="../numbasquestions/">Numbas oppgavetyper</a>
+    <a href="../questions_exams/">Oppgaver og eksamen</a>
 </li>
 
                         
@@ -135,13 +135,7 @@
                         
                             
 <li >
-    <a href="../variablerJME/">Variabler, JME</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../latexvariabler/">Variabler i LaTeX</a>
+    <a href="../variablesJME/">Variabler, JME</a>
 </li>
 
                         
@@ -155,8 +149,8 @@
                     </li>
                 
                 
-                <li><a href="https://numbas.mathcentre.ac.uk/">Numbas editor</a>
-                <li><a href="http://numbas-editor.readthedocs.io/en/latest/#">Numbas documentation</a>
+                <li><a target="_blank" href="https://numbas.mathcentre.ac.uk/">Numbas Editor</a></li>
+                <li><a target="_blank" href="http://numbas-editor.readthedocs.io/en/latest/index.html">Numbas Documentation</a></li>                
                 </ul>
             
 
@@ -198,7 +192,7 @@
 <p><sup>Foreløpig</sup></p>
 <p>Prosjekter er samlinger av spørsmål og eksamener som hører til et fag eller kurs. Hver bruker kan opprette prosjekter og invitere andre brukere til å samarbeide om innholdet.</p>
 <p>Alle nye brukere får automatisk sitt eget prosjekt <strong>My workspace</strong> som bør brukes til oppgaver som er under utvikling. Ferdige arbeider flyttes til prosjekter som gis beskrivende navn i forhold til innholdet. Bruk også kommentarfeltet til å lage noen stikkord om innholdet.</p>
-<p>Alle spørsmål og eksmener må tilhøre et prosjekt. Når du lager et nytt spørsmål må du legge det inn i et prosjekt. Du kan lage kopi av et spørsmål og legge det i et annet prosjekt, men endringer du gjør i kopien vil ikke reflekteres tilbake til originalen.</p>
+<p>Alle spørsmål og eksamener må tilhøre et prosjekt. Når du lager et nytt spørsmål må du legge det inn i et prosjekt. Du kan lage kopi av et spørsmål og legge det i et annet prosjekt, men endringer du gjør i kopien vil ikke reflekteres tilbake til originalen.</p>
 <h3 id="nytt-prosjekt">Nytt prosjekt</h3>
 <p>På startskjermen i Numbas vil du etter innlogging se <strong>+ New</strong> øverst i vinduet. Så får du muligheten til å velge <strong>Project</strong> og du kan fylle ut</p>
 <ul>
@@ -212,7 +206,15 @@
 <p>Klikk på tannhjulikonet i menyen <strong>Members</strong> og videre <strong>Add a member</strong>. I et søkefelt kan du finne registrerte brukere i Numbas, eller du kan taste inn emailadressen til de du vil inviterer som prosjektmedlemmer. Her velger du også mellom status <strong>Can view</strong> eller <strong>Can edit</strong> for de du legger til. Du kan også fjerne medlemmer eller overdra prosjektledelsen til en annen person.</p>
 <h3 id="samarbeid">Samarbeid</h3>
 <p>I åpningssiden for et prosjekt gis en kronologisk oversikt over <strong>Project activity</strong> som oppdateres hver gang det skjer en endring. Her er det også mulig å kommunisere med andre medlemmer med <strong>Write a comment</strong>.</p>
-<p>I menyvalget <strong>Editing history</strong> for hvert enkelt spørsmål kan prosjektmedlemmer bruke <strong>Write a comment</strong> til diskusjonsinnlegg. Det kan også lagres kommenterte snapshots av spørsmålene du redigerer slik at du kan rulle tilbake til tidligere versjoner.</p>
+<p>I menyvalget <strong>Editing history</strong> for hvert enkelt spørsmål kan prosjektmedlemmer bruke <strong>Write a comment</strong> til diskusjonsinnlegg, foreslå endringer eller si fra om du oppdager feil. Når flere samarbeider om å lage spørsmål er det spesielt viktig å bruke <strong>Editong history</strong> til å notere hvilke endringer som gjøres.</p>
+<p>Det kan også lagres kommenterte snapshots av spørsmålene du redigerer slik at du kan rulle tilbake til tidligere versjoner.</p>
+<p>Hvert spørsmål har et <strong>Feedback</strong> felt der det kan velges mellom Ready to use/Should not be used/Has some problems/Does'nt work/Needs to be tested. Bruk dette til å vise aktuell status for spørsmålene.</p>
+<p>Test gjerne andres spørsmål, gi både rett og feil svar. Er spørsmål og svarforslag greit formulert? Er du enig i at spørsmålet er merket med passende fag eller emne?</p>
+<p>I spørsmål som inneholder variabler er det greit å lage navn på variablene som forteller om bruken, unngå enbokstavs navn. Bruk også kommentarfeltet for variablene til å forklare hensikt og hvilke verdier de er ment å gi.</p>
+<p>I tillegg til å merke spørsmål etter fag, emne eller skoleslag kan det også settes egne <strong>Tags</strong>. Bli enige med de du samarbeider med om hvilke Tags som passer for prosjektet.</p>
+<p style="background-color:#eef; padding:3px"><b>Numbas dokumentasjon:</b><br>
+<a href="http://numbas-editor.readthedocs.io/en/latest/project/reference.html">Projects</a></p>
+
 <!--
 
 Collaborating using Numbas
@@ -281,7 +283,7 @@ By level - use a tag to tell other authors which age range or ability level your
         <footer class="col-md-12">
             <hr>
             
-            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+            <p>Built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
 
         <script src="../../js/jquery-1.10.2.min.js"></script>
