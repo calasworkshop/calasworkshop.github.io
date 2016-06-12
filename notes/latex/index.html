@@ -183,9 +183,8 @@
                 <div class="col-md-9" role="main">
 
 <h3 id="latex">LaTeX</h3>
-<p><sup>Foreløpig</sup></p>
 <p><a href="https://no.wikipedia.org/wiki/LaTeX">LaTeX</a> er et programsystem for typesetting av dokumenter. I Numbas brukes det til å lage pene matematiske uttrykk.
-LaTeX formler redigeres i klartekst mellom avgrensere <code>$...$</code> eller <code>\[...\]</code> og blir gjenkjent automatisk som LaTeX kommandoer, den første som <em>inline</em> uttrykk, den andre som <em>displaystyle</em> uttrykk.</p>
+LaTeX formler redigeres i klartekst mellom avgrensere <code>$...$</code> eller <code>\[...\]</code> og blir gjenkjent automatisk som LaTeX kommandoer, den første som <em>inline</em> uttrykk, den andre som <em>displaymode</em> uttrykk.</p>
 <p><code>$ x^2 - y^2 $</code> blir vist som $x^2-y^2$ i en tekstlinje.</p>
 <p><code>\[ x^2 - y^2 \]</code> blir vist på egen linje som $$x^2 - y^2$$</p>
 <p>MathJax er et javascript som sørger for at LaTeX kommandoer blir vist som pene matematiske formler i nettleseren. Ved å høyreklikke på en formel og velge Show Math As &gt; Tex Commands vil du se hvordan uttrykket er satt opp.</p>
@@ -201,22 +200,22 @@ LaTeX formler redigeres i klartekst mellom avgrensere <code>$...$</code> eller <
 <tbody>
 <tr>
 <td>Greske bokstaver</td>
-<td><code>\alpha   \beta   \pi</code><br><code>\delta   \Delta   \omega   \Omega</code></td>
+<td><code>\alpha</code>&nbsp; &nbsp;<code>\beta</code>&nbsp; &nbsp;<code>\pi</code><br><code>\delta</code>&nbsp; &nbsp;<code>\Delta</code>&nbsp; &nbsp;<code>\omega</code>&nbsp; &nbsp;<code>\Omega</code></td>
 <td>$\alpha\;\;\beta\;\;\pi$<br>$\delta\;\;\Delta\;\;\omega\;\;\Omega$</td>
 </tr>
 <tr>
 <td>Funksjoner</td>
-<td><code>\sin x   \log 7   \arctan 1</code></td>
+<td><code>\sin x</code>&nbsp; &nbsp;<code>\log 7</code>&nbsp; &nbsp;<code>\arctan 1</code></td>
 <td>$ \sin x\;\;\log 7\;\;\arctan 1$</td>
 </tr>
 <tr>
 <td>Sub- og superskript</td>
-<td><code>a_n   \log_2 8</code><br> <code>10^2   x^3   \sin^2 \phi</code></td>
+<td><code>a_n</code>&nbsp; &nbsp;<code>\log_2 8</code><br> <code>10^2</code>&nbsp; &nbsp;<code>x^3</code>&nbsp; &nbsp;<code>\sin^2 \phi</code></td>
 <td>$a_n\;\;\log_2 8$ <br>$10^2\;\;x^3\;\;\sin^2 \phi$</td>
 </tr>
 <tr>
 <td>Grupper</td>
-<td><code>10^-3   10^{-3}   a_n+1   a_{n+1}</code></td>
+<td><code>10^-3</code>&nbsp; &nbsp;<code>10^{-3}</code>&nbsp; &nbsp;<code>a_n+1</code>&nbsp; &nbsp;<code>a_{n+1}</code></td>
 <td>$ 10^-3\;\;10^{-3}\;\;a_n+1\;\;a_{n+1}$</td>
 </tr>
 <tr>
@@ -324,10 +323,9 @@ Vi har de randomiserte variablene <code>a=random(-5..5 except 0)</code>og <code>
 </tbody>
 </table>
 <p>Begge metodene kan være nyttige, metoden med \var{} kan brukes når vi lager svarforslag som viser detaljerte mellomregninger, metoden med \simplify{} trekker sammen til pene uttrykk, justerer fortegn og viser ikke faktoren 1. I <a href="http://numbas-editor.readthedocs.io/en/latest/simplification.html#simplification-rules">Simplification rules</a> finner du detaljer om \simplify{}.</p>
-<p>Dette notatet er basert på Numbas dokumentasjon <br />
-<a href="http://numbas-editor.readthedocs.io/en/latest/tutorials/write-question.html">Writing your first question</a> <br />
-<a href="https://numbas.mathcentre.ac.uk/question/670/numbas-tutorial-arithmetic/">Numbas tutorial: arithmetic</a></p>
 <p style="background-color:#eef; padding:3px"><b>Numbas dokumentasjon:</b><br>
+<a href="http://numbas-editor.readthedocs.io/en/latest/tutorials/write-question.html">Writing your first question</a><br>
+<a href="https://numbas.mathcentre.ac.uk/question/670/numbas-tutorial-arithmetic/">Numbas tutorial: arithmetic</a><br>
 <a href="http://numbas-editor.readthedocs.io/en/latest/latex.html">LaTeX documentation</a><br>
 <a href="http://numbas-editor.readthedocs.io/en/latest/simplification.html">Substituting variables into displayed maths</a><br>
 <a href="https://numbas.mathcentre.ac.uk/question/670/numbas-tutorial-arithmetic/">*Replace with question in editor*</p></div>
@@ -336,6 +334,8 @@ Vi har de randomiserte variablene <code>a=random(-5..5 except 0)</code>og <code>
 
         <footer class="col-md-12">
             <hr>
+            
+                <p>Tore Gaupseth (CC)BY</p>
             
             <p>Built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
