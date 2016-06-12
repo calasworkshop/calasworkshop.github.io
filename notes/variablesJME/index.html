@@ -72,7 +72,7 @@
                         
                             
 <li >
-    <a href="../../tasks/task2/">Øving 2 - Om editor, prosjekter, metadata</a>
+    <a href="../../tasks/task2/">Øving 2 - Prosjekter og metadata</a>
 </li>
 
                         
@@ -181,6 +181,12 @@
         <li class="main "><a href="#fasitsvar-med-variabler">Fasitsvar med variabler</a></li>
         
     
+        <li class="main "><a href="#sprsmal-med-variabler">Spørsmål med variabler</a></li>
+        
+    
+        <li class="main "><a href="#sprsmal-med-mathematical-expression">Spørsmål med Mathematical expression</a></li>
+        
+    
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
@@ -200,10 +206,6 @@ med a og b som randomiserte tall, laget av følgende JME kode: <br />
 student Ben kan svare: &nbsp;&nbsp;[<code>(x+1)*(-3+x)</code>]&nbsp; <small><span style="background-color:#eee;">$(x+1)(-3+x)$</span></small> <br />
 og begge svar blir markert riktig fordi de evalueres numerisk til samme testverdier som fasit.</p>
 <p>Et <a href="http://numbas-editor.readthedocs.io/en/latest/tutorials/write-question.html">lignende eksempel</a> er gjennomgått i Numbas dokumentasjon.</p>
-<h2>More complicated mathematical expressions<a class="headerlink" href="#more-complicated-mathematical-expressions" title="Permalink to this headline">¶</a></h2>
-
-<iframe src="https://player.vimeo.com/video/167137075" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
 <h3 id="jme">JME</h3>
 <p>JME er et eget regneapparat i Numbas som kan håndtere tall, tabeller, vektorer, mengder og matriser. Det kjenner også trigonometriske funksjoner, logaritmefunksjoner, funksjoner for tallbehandling, vektoraritmetikk og mange andre. Ved redigering av oppgaver kan vi bruke JME til å lage variabler med randomiserte verdier og gjøre mellomregninger.</p>
 <p>Den fullstendige <a href="http://numbas-editor.readthedocs.io/en/latest/jme-reference.html">dokumentasjonen av JME</a> lister opp alle funksjoner og muligheter, nedenfor er en kort gjennomgang av hvordan vi lager randomiserte tall.</p>
@@ -247,7 +249,16 @@ og begge svar blir markert riktig fordi de evalueres numerisk til samme testverd
 <h3 id="fasitsvar-med-variabler">Fasitsvar med variabler</h3>
 <p>Oppgaven i eksemplet ovenfor forventer svar som (x+1)*(x-3) hvis a=-1 og b=3. Ved inntasting av riktig svar under <strong>Marking</strong>  henter JME de aktuelle verdiene til a og b ved å sette de inn mellom {}-parenteser. Riktig svar settes altså til <code>(x+{a})*(x+{b})</code>.</p>
 <p>Men, fordi Numbas tester om et svar er riktig ved å beregne uttrykkene ved å sette inn noen tall i både studentens svar og fasitsvaret - og sammenlikne om de evaluerer likt - så kan vi i dette tilfellet også sette at <code>x^2 + {a+b}*x+{a*b}</code> også er riktig svar. Hvis vi skal forsikre oss om at studenten har faktorisert kan vi for eksempel sette at tegnene '()()' må være med i svaret.</p>
-<p>Legg merke til at JME evaluerer {a} til verdien som a har i øyeblikket, og sammensatte uttrykk som {a+b} og {a*b} blir utregnet med de aktuelle verdiene som a og b har.</p></div>
+<p>Legg merke til at JME evaluerer {a} til verdien som a har i øyeblikket, og sammensatte uttrykk som {a+b} og {a*b} blir utregnet med de aktuelle verdiene som a og b har.</p>
+<h3 id="sprsmal-med-variabler">Spørsmål med variabler</h3>
+<!--
+<h2>More complicated mathematical expressions<a class="headerlink" href="#more-complicated-mathematical-expressions" title="Permalink to this headline">¶</a></h2>
+-->
+
+<iframe src="https://player.vimeo.com/video/167131067" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+<h3 id="sprsmal-med-mathematical-expression">Spørsmål med Mathematical expression</h3>
+<iframe src="https://player.vimeo.com/video/167137075" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
             
         </div>
 
